@@ -14,18 +14,18 @@ print(list)
 
 ## List-->Question WPA to enter the three movies of me in the list
 print("Question Based on List \n")
-Movies=[  ]
-mov1=input("mov1:")
-mov2=input("mov2:")
-mov3=input("mov3:")
-Movies.append(mov1)
-Movies.append(mov2)
-Movies.append(mov3)
-print(Movies)
+# Movies=[  ]
+# mov1=input("mov1:")
+# mov2=input("mov2:")
+# mov3=input("mov3:")
+# Movies.append(mov1)
+# Movies.append(mov2)
+# Movies.append(mov3)
+# print(Movies)
 
 ## Q2-->Check whether the given list has palindrome elements or not
 
-Org_list=[1,3,2,1]
+Org_list=[1,3,3,1]
 
 Copy_List=Org_list.copy()
 Copy_List.reverse()
@@ -38,6 +38,20 @@ else:
 ## Tuple
 
 tuple=(1,3,5,6)
-print(tuple)
+print("Tuple:",tuple)
 
+#Dictionary 
+# Stores values in "Key:Value" pair
+
+dict={
+    "name":"Sonuzz",
+    "Height": 6 ,
+    "Age": 24 ,
+    "info" : {
+         "Address": "Dhaka",
+         "Phone No": 1234567
+    }
+}
+print(dict)
+print(dict["info"]["Address"])
 
