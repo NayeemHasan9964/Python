@@ -14,14 +14,14 @@ print(list)
 
 ## List-->Question WPA to enter the three movies of me in the list
 print("Question Based on List \n")
-# Movies=[  ]
-# mov1=input("mov1:")
-# mov2=input("mov2:")
-# mov3=input("mov3:")
-# Movies.append(mov1)
-# Movies.append(mov2)
-# Movies.append(mov3)
-# print(Movies)
+Movies=[  ]
+mov1=input("mov1:")
+mov2=input("mov2:")
+mov3=input("mov3:")
+Movies.append(mov1)
+Movies.append(mov2)
+Movies.append(mov3)
+print(Movies)
 
 ## Q2-->Check whether the given list has palindrome elements or not
 
@@ -54,4 +54,24 @@ dict={
 }
 print(dict)
 print(dict["info"]["Address"])
+
+# Question on dictionary
+dict = {
+     "cat" : "A small animal",
+     "table" : ["A piece of furniture", "list of facts & figures"]
+ }
+print(dict["table"][1])
+
+set ={1,3,"Hello"}
+print(set)
+
+#Question on Set
+
+set1={"python", "C++","JavaScript","Java","Python"}
+set2={"Java","Python","Java","C++","C"}
+
+print(len(set1.union(set2)))
+print(set1.intersection(set2))
+
+
 
