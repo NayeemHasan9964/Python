@@ -54,7 +54,7 @@ while i<=n:
 print("Total sum is :", sum)
    
 
-# # For Loop Syntax
+# For Loop Syntax
 list=[1, 4, 9, 16, 25, 36, 49, 64, 81, 100] 
 
 for val in list:
