@@ -32,3 +32,24 @@ class Car():
             
 c1=Car("Mercedes","ZLS",2022)
 c1.print_details()
+
+# WAP to create class that takes name and marks of 3 Subjects as Arguments in Constructor
+# and display Avg of marks using method
+
+class Student():
+    def __init__(self,Fullname,marks):
+        self.name=Fullname
+        self.marks=marks
+        
+    def averageOfMarks(self):
+        sum=0
+        for val in self.marks:
+            sum=sum+val
+            avg=sum/len(self.marks)
+        print("Hi", self.name, ",Your Average is:" , avg)
+    
+s1=Student("AlexMErcer",[23,65,68])
+
+s1.averageOfMarks()
+
+# Creata class to get bank account details(Optional)
