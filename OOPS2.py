@@ -70,4 +70,3 @@ prototype2.power2()
 prototype2.power3()
 prototype2.power4()
 
-
