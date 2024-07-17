@@ -36,17 +36,35 @@
 # print(first_vowel_index('PYTHON'))
 
 # Function to check given number is a Sastry number or not
-import math
+# import math
 
-def is_sastry(n):
-    # Concatenate n and n+1
-    concatenated_number = int(str(n) + str(n + 1))
+# def is_sastry(n):
+#     # Concatenate n and n+1
+#     concatenated_number = int(str(n) + str(n + 1))
     
-    # Check if concatenated_number is a perfect square
-    sqrt = int(math.sqrt(concatenated_number))
-    print(sqrt)
+#     # Check if concatenated_number is a perfect square
+#     sqrt = int(math.sqrt(concatenated_number))
+#     print(sqrt)
     
-    return sqrt * sqrt == concatenated_number  
-print(is_sastry(183))    
+#     return sqrt * sqrt == concatenated_number  
+# print(is_sastry(183))    
+
+# Function to Remove special characters from a String
+# def remove_special_chars(s):
+#     special_char_list = {'@', '#', '!', "*", '.', '$', '%', '^', '<', '>', '&','(', ')', '_', '+', '-', '=', '~', ',', '?', '/'}
+#     for char1 in s:
+#         if char1 in special_char_list:
+#             s = s.replace(char1, '')
+#     return s
+# print(remove_special_chars("hello@ world!!*")) 
+
+# Function to calculate the hypotenuse of the right angle traingle
+import math
+def calculate_hypotenuse(a, b):
+    return math.sqrt(a**2 + b**2)
+    
+print(calculate_hypotenuse(3,4))
+
+
 
   
