@@ -25,14 +25,28 @@
 # print(time_saved(200,60,80)) 
 
 # Find the index of the first vowel in the String
-def first_vowel_index(s):
-    x = s.lower()
-    z = list(x)
-    y = ['a','e','i','o','u']
-    for i in range(0 ,len(x)):
-        for j in range(0 , len(y)):
-            if x[i] == y[j]:
-                return i
-print(first_vowel_index('PYTHON'))
+# def first_vowel_index(s):
+#     x = s.lower()
+#     z = list(x)
+#     y = ['a','e','i','o','u']
+#     for i in range(0 ,len(x)):
+#         for j in range(0 , len(y)):
+#             if x[i] == y[j]:
+#                 return i
+# print(first_vowel_index('PYTHON'))
+
+# Function to check given number is a Sastry number or not
+import math
+
+def is_sastry(n):
+    # Concatenate n and n+1
+    concatenated_number = int(str(n) + str(n + 1))
+    
+    # Check if concatenated_number is a perfect square
+    sqrt = int(math.sqrt(concatenated_number))
+    print(sqrt)
+    
+    return sqrt * sqrt == concatenated_number  
+print(is_sastry(183))    
 
   
