@@ -59,12 +59,25 @@
 # print(remove_special_chars("hello@ world!!*")) 
 
 # Function to calculate the hypotenuse of the right angle traingle
-import math
-def calculate_hypotenuse(a, b):
-    return math.sqrt(a**2 + b**2)
+# import math
+# def calculate_hypotenuse(a, b):
+#     return math.sqrt(a**2 + b**2)
     
-print(calculate_hypotenuse(3,4))
+# print(calculate_hypotenuse(3,4))
 
+# Function to create Dictionary from a List where Keys are the values of list and values are 
+# Squares of the list
 
+# def numbers_to_dict(numbers):
+#       result = {}  # Initialize an empty dictionary
+#       for number in numbers:  # Iterate over each number in the input list
+#         result[str(number)] = number**2  # Convert number to string and use it as key, set the value as number squared
+#       return result  # Return the resulting dictionary
+# print(numbers_to_dict([1,2,3]))
 
+# Funtion to return the first and last parameter in the Arguments
+
+def first_last_parameter(*args):
+    return args[0], args[-1]
+print(first_last_parameter(1,2,3,4,5))
   
