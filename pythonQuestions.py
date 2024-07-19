@@ -77,7 +77,30 @@
 
 # Funtion to return the first and last parameter in the Arguments
 
-def first_last_parameter(*args):
-    return args[0], args[-1]
-print(first_last_parameter(1,2,3,4,5))
+# def first_last_parameter(*args):
+#     return args[0], args[-1]
+# print(first_last_parameter(1,2,3,4,5))
+
+# Function to check whether String is SpongeCase or not
+# def is_Spongecase(s):
+#    if s == s.lower():
+#         return False
+#    elif s == s.upper():
+#         return False
+#    elif s == s.capitalize():
+#         return False
+#    else:
+#         return True  
+# print(is_Spongecase("Spongecase"))   
+
+# Function to repeat the last Characters in the String N times
+def repeat_last_char(string,n):
+    n1 = n-1
+    return string+string[-1]*n1
+print(repeat_last_char("Spongecase",3))
+
+   
+    
+    
+    
   
