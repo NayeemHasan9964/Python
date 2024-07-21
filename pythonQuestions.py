@@ -94,10 +94,27 @@
 # print(is_Spongecase("Spongecase"))   
 
 # Function to repeat the last Characters in the String N times
-def repeat_last_char(string,n):
-    n1 = n-1
-    return string+string[-1]*n1
-print(repeat_last_char("Spongecase",3))
+# def repeat_last_char(string,n):
+#     return string+string[-1]*n
+# print(repeat_last_char("Spongecase",3))
+
+#Function to return longest subsequence in a binary string
+# def longest_zero_sequence(binary_string):
+#     print(binary_string.split('1'))
+#     return len(max(binary_string.split('1')))
+# print(longest_zero_sequence('10100100010001'))
+
+#Function to return pencil which has longlead   
+def switch_pencil(pencil1, pencil2):
+        pencil1 = int(pencil1)
+        pencil2 = int(pencil2)
+        # Compare the lengths and return the appropriate string
+        if pencil1 > pencil2:
+            return "pencil 1"
+        else:
+            return "pencil 2" 
+   
+print(switch_pencil("3","5"))    
 
    
     
