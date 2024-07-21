@@ -105,16 +105,32 @@
 # print(longest_zero_sequence('10100100010001'))
 
 #Function to return pencil which has longlead   
-def switch_pencil(pencil1, pencil2):
-        pencil1 = int(pencil1)
-        pencil2 = int(pencil2)
-        # Compare the lengths and return the appropriate string
-        if pencil1 > pencil2:
-            return "pencil 1"
-        else:
-            return "pencil 2" 
+# def switch_pencil(pencil1, pencil2):
+#         pencil1 = int(pencil1)
+#         pencil2 = int(pencil2)
+#         # Compare the lengths and return the appropriate string
+#         if pencil1 > pencil2:
+#             return "pencil 1"
+#         else:
+#             return "pencil 2" 
    
-print(switch_pencil("3","5"))    
+# print(switch_pencil("3","5"))  
+
+#Function to check given number is a perfect cube and square
+def is_cubic_square(n):
+    Square_of_n = False
+    cube_of_n = False
+    i = 1
+    while i <= n:
+        if (i*i == n):
+            Square_of_n = True
+        if (i*i*i == n):
+            cube_of_n = True
+        i += 1
+    return (Square_of_n and cube_of_n )
+print(is_cubic_square(125))
+        
+
 
    
     
