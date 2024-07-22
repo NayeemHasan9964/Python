@@ -117,18 +117,37 @@
 # print(switch_pencil("3","5"))  
 
 #Function to check given number is a perfect cube and square
-def is_cubic_square(n):
-    Square_of_n = False
-    cube_of_n = False
-    i = 1
-    while i <= n:
-        if (i*i == n):
-            Square_of_n = True
-        if (i*i*i == n):
-            cube_of_n = True
-        i += 1
-    return (Square_of_n and cube_of_n )
-print(is_cubic_square(125))
+# def is_cubic_square(n):
+#     Square_of_n = False
+#     cube_of_n = False
+#     i = 1
+#     while i <= n:
+#         if (i*i == n):
+#             Square_of_n = True
+#         if (i*i*i == n):
+#             cube_of_n = True
+#         i += 1
+#     return (Square_of_n and cube_of_n )
+# print(is_cubic_square(125))
+
+#Function to return the number that occurs twice and the number which is missing
+def find_mismatch(nums):
+    x = list(nums)
+    n = len(x)
+    
+    expected_sum = n *(n + 1)/2
+    actual_sum = sum(x)
+ 
+    for i in range(0, len(x)):
+        for j in range(i+1,len(x)):
+            if x[i] == x[j]:
+                duplicate = x[i]
+                break
+    missing = int(expected_sum - (actual_sum - duplicate))
+    return [duplicate,missing]                       
+print(find_mismatch([1,2,2,4]))            
+                
+            
         
 
 
