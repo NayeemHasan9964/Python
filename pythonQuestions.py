@@ -131,22 +131,44 @@
 # print(is_cubic_square(125))
 
 #Function to return the number that occurs twice and the number which is missing
-def find_mismatch(nums):
-    x = list(nums)
-    n = len(x)
+# def find_mismatch(nums):
+#     x = list(nums)
+#     n = len(x)
     
-    expected_sum = n *(n + 1)/2
-    actual_sum = sum(x)
+#     expected_sum = n *(n + 1)/2
+#     actual_sum = sum(x)
  
-    for i in range(0, len(x)):
-        for j in range(i+1,len(x)):
-            if x[i] == x[j]:
-                duplicate = x[i]
-                break
-    missing = int(expected_sum - (actual_sum - duplicate))
-    return [duplicate,missing]                       
-print(find_mismatch([1,2,2,4]))            
+#     for i in range(0, len(x)):
+#         for j in range(i+1,len(x)):
+#             if x[i] == x[j]:
+#                 duplicate = x[i]
+#                 break
+#     missing = int(expected_sum - (actual_sum - duplicate))
+#     return [duplicate,missing]                       
+# print(find_mismatch([1,2,2,4]))            
                 
+#Function to check given string to check palindrome  or not
+
+# def is_palindrome(s):
+#         x = list(s)
+#         for i in range(0,len(x)):
+#             if x[i] != x[len(x)-i-1]:
+#                 return False
+#             return True
+# print(is_palindrome('madam'))     
+
+#Function to find the shortest word in the giveb string
+def shortest_word(s):   
+    x = s.split(" ")
+    for i in range(0,len(x)):
+        min = len(x[0])
+        if(len(x[i]) < len(x[0])):
+            min = (x[i])
+            return min
+print(shortest_word('This is an example sentence'))        
+       
+ 
+        
             
         
 
