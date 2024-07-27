@@ -158,15 +158,32 @@
 # print(is_palindrome('madam'))     
 
 #Function to find the shortest word in the giveb string
-def shortest_word(s):   
-    x = s.split(" ")
-    for i in range(0,len(x)):
-        min = len(x[0])
-        if(len(x[i]) < len(x[0])):
-            min = (x[i])
-            return min
-print(shortest_word('This is an example sentence'))        
-       
+# def shortest_word(s):   
+#     x = s.split(" ")
+#     for i in range(0,len(x)):
+#         min = len(x[0])
+#         if(len(x[i]) < len(x[0])):
+#             min = (x[i])
+#             return min
+# print(shortest_word('This is an example sentence'))    
+
+#Function to find the largest among the list of lists
+def find_largest(lists):
+    max_values = []
+    for i in range(len(lists)):
+        max_value = lists[i][0]
+        for j in range(len(lists[i])):
+            if lists[i][j] > max_value:
+                max_value = lists[i][j]
+        max_values.append(max_value)
+    return max_values
+
+# Example usage
+print(find_largest([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))  # Output: [3, 6, 9]
+          
+            
+    
+    
  
         
             
