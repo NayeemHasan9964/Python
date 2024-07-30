@@ -168,19 +168,38 @@
 # print(shortest_word('This is an example sentence'))    
 
 #Function to find the largest among the list of lists
-def find_largest(lists):
-    max_values = []
-    for i in range(len(lists)):
-        max_value = lists[i][0]
-        for j in range(len(lists[i])):
-            if lists[i][j] > max_value:
-                max_value = lists[i][j]
-        max_values.append(max_value)
-    return max_values
+# def find_largest(lists):
+#     max_values = []
+#     for i in range(len(lists)):
+#         max_value = lists[i][0]
+#         for j in range(len(lists[i])):
+#             if lists[i][j] > max_value:
+#                 max_value = lists[i][j]
+#         max_values.append(max_value)
+#     return max_values
+# print(find_largest([[1, 2, 3], [4, 5, 6], [7, 8, 9]])) 
 
-# Example usage
-print(find_largest([[1, 2, 3], [4, 5, 6], [7, 8, 9]]))  # Output: [3, 6, 9]
-          
+
+
+#Function to transcribe to DNA sequence to mRNA 
+def transcribe_to_mrna(dna):
+    mrna_dict = {
+        'A': 'U',
+        'C': 'G',
+        'G': 'C',
+        'T': 'A'
+    }
+    mrna = ""
+    for c in dna:
+        if c in mrna_dict:
+            mrna += mrna_dict[c]
+        else:
+            return "Invalid DNA sequence"
+    
+    return mrna
+print(transcribe_to_mrna("ATCG"))
+
+
             
     
     
