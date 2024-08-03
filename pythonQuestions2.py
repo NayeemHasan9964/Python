@@ -52,10 +52,37 @@
 # print(positive_dominant([-1, -1, -2, -3, 4, 4])) 
 
 #Function to mutiply each number in a list with 2
-def multiply_by_two(numbers):
-    multiplied_list = []
-    for num in numbers:
-        multiplied_list.append(num * 2)
-    return multiplied_list
-print("The multiplied list is:" ,multiply_by_two([1, 2, 3, 4, 5]))
+# def multiply_by_two(numbers):
+#     multiplied_list = []
+#     for num in numbers:
+#         multiplied_list.append(num * 2)
+#     return multiplied_list
+# print("The multiplied list is:" ,multiply_by_two([1, 2, 3, 4, 5]))
+
+#Function to calculate the points of Scrabble word
+def scrabble_points(word):
+    lower_case = word.lower()   
+    sum = 0
+    points = {'a': 1, 'b': 3, 'c': 3,
+               'd': 2, 'e': 1, 'f': 4,
+               'g': 2, 'h': 4, 'i': 1,
+               'j': 8, 'k': 5, 'l': 1,
+               'm': 3, 'n': 1, 'o': 1,
+               'p': 3, 'q': 10, 'r': 1,
+               's': 1, 't': 1, 'u': 1,
+               'v': 4, 'w': 4, 'x': 8,
+               'y': 4, 'z': 10}
+    for char in lower_case:
+       sum += points[char]
+    return sum
+print(scrabble_points('hello'))
+    
+         
+              
+              
+              
+              
+              
+              
+        
        
