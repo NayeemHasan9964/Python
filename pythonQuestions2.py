@@ -60,22 +60,50 @@
 # print("The multiplied list is:" ,multiply_by_two([1, 2, 3, 4, 5]))
 
 #Function to calculate the points of Scrabble word
-def scrabble_points(word):
-    lower_case = word.lower()   
+# def scrabble_points(word):
+#     lower_case = word.lower()   
+#     sum = 0
+#     points = {'a': 1, 'b': 3, 'c': 3,
+#                'd': 2, 'e': 1, 'f': 4,
+#                'g': 2, 'h': 4, 'i': 1,
+#                'j': 8, 'k': 5, 'l': 1,
+#                'm': 3, 'n': 1, 'o': 1,
+#                'p': 3, 'q': 10, 'r': 1,
+#                's': 1, 't': 1, 'u': 1,
+#                'v': 4, 'w': 4, 'x': 8,
+#                'y': 4, 'z': 10}
+#     for char in lower_case:
+#        sum += points[char]
+#     return sum
+# print(scrabble_points('hello'))
+
+#Function to return highest number in a digit
+# def highest_digit(n):
+#     n_string = str(n)
+#     x = list(n_string)
+#     return max(x)
+# print(highest_digit(12345))
+
+#Function to find all words in a sentence starts with a vowel.
+# def find_vowel_words(sentence):
+#      vowels ={'a','e','i','o','u'}
+#      words = sentence.split()
+#      result = [word for word in words if word[0].lower() in vowels]
+#      return result
+# print(find_vowel_words('I am doing fine'))   
+
+#Function to print sum all digits between given two numbers
+def sum_of_digits(start,end):
+    nums = range(start,end+1)
+    x =list(nums)
+    y = list(str(x))
+    print(y)
     sum = 0
-    points = {'a': 1, 'b': 3, 'c': 3,
-               'd': 2, 'e': 1, 'f': 4,
-               'g': 2, 'h': 4, 'i': 1,
-               'j': 8, 'k': 5, 'l': 1,
-               'm': 3, 'n': 1, 'o': 1,
-               'p': 3, 'q': 10, 'r': 1,
-               's': 1, 't': 1, 'u': 1,
-               'v': 4, 'w': 4, 'x': 8,
-               'y': 4, 'z': 10}
-    for char in lower_case:
-       sum += points[char]
+    for i in range(0,len(x)):
+       sum = sum + x[i]
     return sum
-print(scrabble_points('hello'))
+    
+print(sum_of_digits(10,15))  
     
          
               
