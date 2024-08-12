@@ -93,19 +93,59 @@
 # print(find_vowel_words('I am doing fine'))   
 
 #Function to print sum all digits between given two numbers
-def sum_of_digits(start,end):
-    nums = range(start,end+1)
-    x =list(nums)
-    y = list(str(x))
-    print(y)
-    sum = 0
-    for i in range(0,len(x)):
-       sum = sum + x[i]
-    return sum
+# def sum_of_digits(start,end):
+#     total_sum = 0
+#     for num in range(start, end + 1):
+#         for digit in str(num):
+#             total_sum += int(digit)
+#     return total_sum
+# print(sum_of_digits(10,15))  
     
-print(sum_of_digits(10,15))  
+#Function to find the length of the line
+# import math
+# def calculate_line_length(point1, point2):
+#     x1,y1 = point1
+#     x2,y2 = point2
+#     length_of_line = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+#     return length_of_line   
     
-         
+# print(calculate_line_length((2,2),(4,6)))
+
+#Function to check if a given hand poker cards is full house
+# def is_full_house(hand):
+#      rank_counts = {}
+    
+#      for card in hand:
+#         rank = card[0]  # Extract the rank of the card (assuming rank is the first character)
+#         if rank in rank_counts:
+#             rank_counts[rank] += 1
+#         else:
+#             rank_counts[rank] = 1
+    
+#     # Get the counts of each rank
+#      counts = list(rank_counts.values())
+    
+#     # Check if the hand is a Full House (one 3-of-a-kind and one pair)
+#      return sorted(counts) == [2, 3]
+    
+    
+# print(is_full_house(['2','2','3','3','3']))
+
+#Function to divide chocolates among the children
+# def divide_chocolates(total_chocolates, total_children):
+#     list = []
+#     no_of_chocolates = list.append(int(total_chocolates / total_children))
+#     remaining_chocolates = list.append(int(total_chocolates % total_children))
+#     return list
+
+# print(divide_chocolates(15,4))
+
+#Function to remove duplicates from a list
+def remove_duplicates(input_list):
+    return sorted(list(set(input_list)))
+print(remove_duplicates([1,2,2,3,4,4]))
+
+
               
               
               
