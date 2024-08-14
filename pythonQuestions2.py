@@ -141,9 +141,33 @@
 # print(divide_chocolates(15,4))
 
 #Function to remove duplicates from a list
-def remove_duplicates(input_list):
-    return sorted(list(set(input_list)))
-print(remove_duplicates([1,2,2,3,4,4]))
+# def remove_duplicates(input_list):
+#     return sorted(list(set(input_list)))
+# print(remove_duplicates([1,2,2,3,4,4]))
+
+#Funtion find to smallest number in each list from group of lists
+# def find_smallest(lists):
+#     a,b,c = lists
+#     return [min(a),min(b),min(c)]
+# print(find_smallest([[1,2,3],[4,5,6],[7,8,9]]))
+
+#Function to replace the an item in a list with a new item,if the item is found in the list
+# def replace_item(lst, old_item, new_item):
+#     for i in range(0,len(lst)):
+#         if lst[i] == old_item:
+#             lst.pop(i)
+#             lst.insert(i,new_item)
+#     return lst
+# print(replace_item(['apple','banana','cherry'],'banana','orange'))
+
+#Function to check if a given key exists in a dictionary
+def check_key(dictionary, key):
+    if key in dictionary:
+            return True
+    else:
+            return False
+print(check_key({'name':'John','age':30,'city':'New York'},'age'))
+
 
 
               
