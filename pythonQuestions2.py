@@ -161,20 +161,32 @@
 # print(replace_item(['apple','banana','cherry'],'banana','orange'))
 
 #Function to check if a given key exists in a dictionary
-def check_key(dictionary, key):
-    if key in dictionary:
-            return True
-    else:
-            return False
-print(check_key({'name':'John','age':30,'city':'New York'},'age'))
+# def check_key(dictionary, key):
+#     if key in dictionary:
+#             return True
+#     else:
+#             return False
+# print(check_key({'name':'John','age':30,'city':'New York'},'age'))
 
+#Function to check if the last item is equal to concatination of other items
+# def check_last_item(lst):
+#         srt1 = lst[-1]
+#         srt2 = ''.join(lst[:-1])
+#         if len(lst) > 1:
+#                 return srt1 == srt2
+#         else:
+#                 return False
+# print(check_last_item(['a','b','c','abc']))
 
-
-              
-              
-              
-              
-              
-              
-        
-       
+#Function to find the largert number formed after swapping two digits of a given number
+def largest_swap(num):
+        R_num = 0
+        while num > 0:
+                num1 = num % 10
+                R_num = R_num*10 +  num1
+                num = num // 10
+        if (R_num > num):
+                return R_num
+        else:
+                return num   
+print(largest_swap(27))
