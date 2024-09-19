@@ -179,14 +179,41 @@
 # print(check_last_item(['a','b','c','abc']))
 
 #Function to find the largert number formed after swapping two digits of a given number
-def largest_swap(num):
-        R_num = 0
-        while num > 0:
-                num1 = num % 10
-                R_num = R_num*10 +  num1
-                num = num // 10
-        if (R_num > num):
-                return R_num
-        else:
-                return num   
-print(largest_swap(27))
+# def largest_swap(num):
+#         R_num = 0
+#         while num > 0:
+#                 num1 = num % 10
+#                 R_num = R_num*10 +  num1
+#                 num = num // 10
+#         if (R_num > num):
+#                 return R_num
+#         else:
+#                 return num   
+# print(largest_swap(27))
+
+# Fucntion to convert a string to list
+# def string_to_list(s):
+#         x = s.split()
+#         return x
+# print(string_to_list("Hello World"))
+
+#Function to check given two lists are equal or not
+# def check_lists(lst1, lst2):
+#         if lst1 == lst2:
+#                 return True
+#         else:
+#                 return False
+# print(check_lists([1,2,3],[1,2,3]))
+
+#Function to calculate the number of trips a driver has to make to transport 12 passengers
+# def calculate_trips(seats):
+#         if (seats == 0):
+#                 return "number of seats cannot be zero"
+#         trips = (12 + seats - 1) // seats
+#         return trips
+# print(calculate_trips(0))     
+
+#Function to create a stutterinf effect on a given word
+def stuttering(word):
+        return word[0] +  word[1] + "..." + word[0] + word[1] + "..." + word + "??"
+print(stuttering("hello"))
