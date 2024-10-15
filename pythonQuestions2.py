@@ -214,6 +214,37 @@
 # print(calculate_trips(0))     
 
 #Function to create a stutterinf effect on a given word
-def stuttering(word):
-        return word[0] +  word[1] + "..." + word[0] + word[1] + "..." + word + "??"
-print(stuttering("hello"))
+# def stuttering(word):
+#         return word[0] +  word[1] + "..." + word[0] + word[1] + "..." + word + "??"
+# print(stuttering("hello"))
+
+#Write a function to repeat chars in a string
+# def repeat_chars(s, n):
+#     return ''.join([char * n for char in s])
+# print(repeat_chars('abc', 3))  # Output: hheelllloo
+
+#Write a funtion that returns the list of string
+# def loves_me_not(n):
+#     x = list()    
+#     for i in range(1,n+1):
+#         if(i%2 == 0):
+#             x.append("Loves me not")
+#         if(i%2 != 0):
+#             x.append("Loves me")
+#     return x        
+# print(loves_me_not(4))        
+
+#Write a function to modify a tuple
+# def modify_tuple(tupl, elem):
+#         x = list(tupl)
+#         x .append(elem)
+#         return tuple(x)
+# print(modify_tuple((1,2,3), 4))  
+
+#write a funtion to repeat vowels twice in String
+def repeat_vowels(s):
+    vowels = 'aeiouAEIOU'
+    return ''.join([char * 2 if char in vowels else char for char in s])
+print(repeat_vowels('hello'))  # Output: heellllo
+
+
