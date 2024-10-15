@@ -242,9 +242,16 @@
 # print(modify_tuple((1,2,3), 4))  
 
 #write a funtion to repeat vowels twice in String
-def repeat_vowels(s):
-    vowels = 'aeiouAEIOU'
-    return ''.join([char * 2 if char in vowels else char for char in s])
-print(repeat_vowels('hello'))  # Output: heellllo
+# def repeat_vowels(s):
+#     vowels = 'aeiouAEIOU'
+#     return ''.join([char * 2 if char in vowels else char for char in s])
+# print(repeat_vowels('hello'))  # Output: heellllo
 
+# def find_largest(numbers):
+#     return max(numbers)
+# print(find_largest([1,2,3,4,5]))           
 
+#Write a fucntion that takes floating number and return reverse of that number
+def reverse_number(num):
+    return float(str(num)[::-1])
+print(reverse_number(123.45))
