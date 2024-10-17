@@ -1,4 +1,3 @@
-file = open('practice.txt')
 #another way to open and close file
 # with open("practice.txt") as file:
 #Read a line
@@ -9,10 +8,16 @@ file = open('practice.txt')
 #     print(line)
 #     line = file.readline()
 #To take lines as list
-for line in file.readlines():
-    print(line)
+# for line in file.readlines():
+#     print(line)
 
 #Write a data into a file
+#Reverse the data in the file
+with open("practice.txt",'r') as reader:
+    data = reader.readlines()
+    reversed(data)
+    with open("practice.txt",'w') as writer:
+        for line in reversed(data):
+            writer.write(line)
 
 
-file.close()
