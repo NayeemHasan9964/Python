@@ -252,6 +252,7 @@
 # print(find_largest([1,2,3,4,5]))           
 
 #Write a fucntion that takes floating number and return reverse of that number
-def reverse_number(num):
-    return float(str(num)[::-1])
-print(reverse_number(123.45))
+# def reverse_number(num):
+#     return float(str(num)[::-1])
+# print(reverse_number(123.45))
+
