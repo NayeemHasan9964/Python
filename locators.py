@@ -16,7 +16,7 @@ driver.find_element(By.ID ,"exampleCheck1").click()
 driver.find_element(By.XPATH, "//input[@type='submit']").click()
 
 #Static DropDown
-dropdown = Select(driver.find_element(By.ID,"exampleFormControlSelect1"))
+dropdown = Select(driver.find_element(By.XPATH,"exampleFormControlSelect1"))
 dropdown.select_by_index(0)
 
 #To Create CSS Selector ->tagname[attribute = 'value']
