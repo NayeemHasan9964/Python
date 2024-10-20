@@ -255,3 +255,9 @@
 # def reverse_number(num):
 #     return float(str(num)[::-1])
 # print(reverse_number(123.45))
+
+
+# def remove_vowels(string):
+#     vowels = "aeiouAEIOU"
+#     print(''.join([char for char in string if char not in vowels]))
+# remove_vowels("Hello World")
