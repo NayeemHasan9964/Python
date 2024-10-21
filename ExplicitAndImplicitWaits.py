@@ -50,4 +50,4 @@ assert discountAmount < TotalAMount
 driver.find_element(By.XPATH,"//button[text() = 'Place Order' ]").click()
 wait = WebDriverWait(driver, 10)
 driver.find_element(By.CSS_SELECTOR,"div[class = 'wrapperTwo'] select").send_keys("India")
-wait = WebDriverWait(driver, 10)
+
