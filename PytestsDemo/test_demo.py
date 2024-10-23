@@ -7,3 +7,8 @@ def test_MethodTest(setup):
 @pytest.mark.xfail
 def test_greet():
     print("Good Morning")
+
+
+def test_prototypePart2(Prototype2):
+    print(Prototype2)
+

@@ -10,3 +10,7 @@ def setup():
 def passingData():
     print("Passing Data to Methods")
     return ["Alex" "Mercer", "Prototype"]
+
+@pytest.fixture(params=["James","Heller","Prototype2"])
+def Prototype2(request):
+    return request.param
