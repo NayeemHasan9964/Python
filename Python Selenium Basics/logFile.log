@@ -1,3 +1,6 @@
 2024-10-23 16:10:08,646 : CRITICAL : PytestsDemo.test_LoggingDemo : Crtical Issue
 2024-10-23 16:10:08,719 : INFO : test_gettingData : AlexMercer
 2024-10-23 16:10:08,720 : INFO : test_gettingData : Prototype
+2024-10-31 18:20:19,009 : CRITICAL : PytestsDemo.test_LoggingDemo : Crtical Issue
+2024-10-31 18:20:19,222 : INFO : test_gettingData : AlexMercer
+2024-10-31 18:20:19,222 : INFO : test_gettingData : Prototype
