@@ -41,9 +41,26 @@
 # input_str = "Hello"
 # print(reverse_string(input_str))  # Output: "olleH"
 
-def sum_of_squares(numbers):
-    sum = 0
-    for i in range(len(numbers)):
-        sum = sum + numbers[i]**2
-    return sum
-print(sum_of_squares([1,2,4]))
+# def sum_of_squares(numbers):
+#     sum = 0
+#     for i in range(len(numbers)):
+#         sum = sum + numbers[i]**2
+#     return sum
+# print(sum_of_squares([1,2,4]))
+
+# target = 9
+# def target_sum(lst):
+#     for i in range(len(lst)):
+#         for j in range(i+1,len(lst)):
+#             if lst[i]+lst[j]==target:
+#                 return i,j
+# print("The Indices which gives target sum are",target_sum([1,2,4,7]))
+
+
+# def find_maxNum(lst):
+#     max_of_list = lst[0]
+#     for i in range(len(lst)):
+#         if lst[i]<max_of_list:
+#             max_of_list  = lst[i]
+#     return max_of_list
+# print(find_maxNum([55,66,99,88,77,44]))
