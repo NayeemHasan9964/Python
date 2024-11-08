@@ -1,14 +1,14 @@
-# # 1. Basic String Manipulation
-# # Write a function to reverse a string without using built-in functions.
+# 1. Basic String Manipulation
+
+# Write a function to reverse a string without using built-in functions.
 # def rev_String(s):
 #     reversed_string = ""
 #     for char in s.lower():
 #         reversed_string = char + reversed_string
 #     return  reversed_string
 # print(rev_String("Hello"))
-#
-#
-# # Write a function to check if a string is a palindrome.
+
+# Write a function to check if a string is a palindrome.
 # def String_palindrome(s):
 #     s = s.lower()
 #     reversed_string = ""
@@ -20,8 +20,8 @@
 #     else:
 #         return "not a Palindrome"
 # print(String_palindrome("MADAM"))
-#
-# # Write a function to count vowels and consonants in a string.
+
+# Write a function to count vowels and consonants in a string.
 # def countingVowelsAndConsonants(word):
 #     vowels = "aeiouAEIOU"
 #     c_count,v_count = 0,0
@@ -33,10 +33,10 @@
 #                 c_count +=1
 #     return c_count,v_count
 # print(countingVowelsAndConsonants("hello"))
-#
-# # 2. Prime Numbers and Number Manipulations
-#
-# # Write a function to check if a given number is prime.
+
+
+#2. Prime Numbers and Number Manipulations
+# Write a function to check if a given number is prime.
 # def to_checkPrime(num):
 #     for i in range(2,num):
 #         if num % i == 0:
@@ -44,7 +44,8 @@
 #         else:
 #             return f"{num} is a prime"
 # print(to_checkPrime(5))
-# # Write a function to print all prime numbers within a range.
+
+# Write a function to print all prime numbers within a range.
 # def to_PrimeInRange():
 #     lower = 2
 #     upper = 100
@@ -58,6 +59,7 @@
 #             else:
 #                 print(num)
 # to_PrimeInRange()
+
 # Write a function to find the sum of digits of a given number.
 # def sumOfDigits(num):
 #     sum = 0
@@ -66,6 +68,7 @@
 #         num = num//10
 #     return sum
 # print(sumOfDigits(420))
+
 # Write a function to Reverse a number
 # def rev_num(num):
 #     rev = 0
@@ -75,11 +78,17 @@
 #         num = num//10
 #     return rev
 # print(rev_num(1234))
-from PythonBasics.Files import new_data
 
+# Write a function for fibonacci Series
+# def fibonacci_series(n):
+#     seq = [0,1]
+#     while seq[-1]+seq[-2]<n:
+#         seq.append(seq[-1]+seq[-2])
+#     return seq
+# print(fibonacci_series(25))
 
 # 3. Working with Lists
-# Write a function to find the second largest element in a list.
+# Write a function to find the second-largest element in a list.
 # def to_findSecondLargest(lst):
 #     max_num = lst[0]
 #     for i in range(0, len(lst)):
@@ -137,3 +146,21 @@ from PythonBasics.Files import new_data
 #                 lst[i],lst[j]=lst[j],lst[i]
 #     return lst
 # print(to_sortInAscending([11,88,77,66,55,44,33,22,99]))
+
+# 4. Recursion and Mathematical Operations
+# Write a recursive function to find the factorial of a number.
+# def factorial(n):
+#     if n == 0:  # Base case
+#         return 1
+#     else:
+#         return n * factorial(n - 1)  # Recursive call
+# print(factorial(3))
+
+# 5. Finding Anagrams
+# Write a function to check if two words are anagram
+def anagrams(s1,s2):
+    return sorted(s1)==sorted(s2)
+print(anagrams("listen","hello"))
+
+# 6. Finding the Greatest Common Divisor (GCD)
+# Write a function to find the GCD of two numbers.
