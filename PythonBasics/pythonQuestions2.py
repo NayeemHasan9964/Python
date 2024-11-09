@@ -51,7 +51,7 @@
 #         return False
 # print(positive_dominant([-1, -1, -2, -3, 4, 4])) 
 
-#Function to mutiply each number in a list with 2
+#Function to multiply each number in a list with 2
 # def multiply_by_two(numbers):
 #     multiplied_list = []
 #     for num in numbers:
@@ -261,3 +261,30 @@
 #     vowels = "aeiouAEIOU"
 #     print(''.join([char for char in string if char not in vowels]))
 # remove_vowels("Hello World")
+
+# To compare the first and last character of string
+# def check_chars(s):
+#     return s[0]==s[len(s)-1]
+# print(check_chars("hello"))
+
+#To check number is within in the Range
+# def is_in_range(n, start, end):
+#     for i in range(start,end+1):
+#         if i==n:
+#             return True
+#     return False
+# print(is_in_range(20,1,20))
+
+# import math
+# def calculate_area(radius):
+#     Area = math.pi*radius**2
+#     return round(Area,2)
+# print(calculate_area(5))
+
+def sum_of_evens(numbers):
+    even_sum = 0
+    for i in range (0,len(numbers)):
+        if numbers[i]%2==0:
+            even_sum = even_sum + numbers[i]
+    return even_sum
+print(sum_of_evens([1,2,3,4,5]))

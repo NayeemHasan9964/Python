@@ -158,9 +158,9 @@
 
 # 5. Finding Anagrams
 # Write a function to check if two words are anagram
-def anagrams(s1,s2):
-    return sorted(s1)==sorted(s2)
-print(anagrams("listen","hello"))
+# def anagrams(s1,s2):
+#     return sorted(s1)==sorted(s2)
+# print(anagrams("listen","hello"))
 
 # 6. Finding the Greatest Common Divisor (GCD)
 # Write a function to find the GCD of two numbers.
