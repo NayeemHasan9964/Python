@@ -5,10 +5,9 @@
 # print(Reverse_String("MADAM123"))
 
 # Write today is sunday
-# def reverse_words(String):
-#     return " ".join(String.split()[::-1])
-#
-# print(reverse_words("today is sunday"))
+def reverse_words(String):
+    return " ".join(String.split()[::-1])
+print(reverse_words("today is sunday"))
 
 # # Function to check if a number is prime
 # # Python program to display all the prime numbers within an interval
