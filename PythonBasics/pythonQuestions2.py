@@ -281,10 +281,52 @@
 #     return round(Area,2)
 # print(calculate_area(5))
 
-def sum_of_evens(numbers):
-    even_sum = 0
-    for i in range (0,len(numbers)):
-        if numbers[i]%2==0:
-            even_sum = even_sum + numbers[i]
-    return even_sum
-print(sum_of_evens([1,2,3,4,5]))
+# def sum_of_evens(numbers):
+#     even_sum = 0
+#     for i in range (0,len(numbers)):
+#         if numbers[i]%2==0:
+#             even_sum = even_sum + numbers[i]
+#     return even_sum
+# print(sum_of_evens([1,2,3,4,5]))
+
+# def list_union_intersection(list1, list2):
+#     union = sorted(set(list1).union(list2))
+#     intersection = sorted(set(list1).intersection(list2))
+#     return (union, intersection)
+# print(list_union_intersection([1,2,3,4],[3,4,5,6]))
+
+# def number_to_reversed_list(n):
+#     lst = []
+#     while n>0:
+#         num = n%10
+#         lst.append(num)
+#         n = n//10
+#     return lst
+# print(number_to_reversed_list(12345))
+
+# def count_occurrences(item, tup):
+#     n = len(tup)
+#     count = 0
+#     for i in range(0,n):
+#             if tup[i]==item:
+#                 count +=1
+#     return count
+# print(count_occurrences('a',('a','b','c','a','a','a')))
+
+# def sort_by_length(lst):
+#     n = len(lst)
+#     for i in range (0,n):
+#         for j in range(i+1,n):
+#             if len(lst[i])>len(lst[j]):
+#                 lst[i],lst[j] = lst[j],lst[i]
+#     return lst
+# print(sort_by_length(["apple","cherry","date","bat"]))
+def frequency_distribution(lst):
+    frequency = {}
+    for item in lst:
+        if item in frequency:
+            frequency[item] += 1
+        else:
+            frequency[item] = 1
+    return frequency
+print(frequency_distribution(['a','b','a','c','b','a']))
