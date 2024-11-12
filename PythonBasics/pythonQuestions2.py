@@ -321,12 +321,26 @@
 #                 lst[i],lst[j] = lst[j],lst[i]
 #     return lst
 # print(sort_by_length(["apple","cherry","date","bat"]))
-def frequency_distribution(lst):
-    frequency = {}
-    for item in lst:
-        if item in frequency:
-            frequency[item] += 1
-        else:
-            frequency[item] = 1
-    return frequency
-print(frequency_distribution(['a','b','a','c','b','a']))
+
+# def frequency_distribution(lst):
+#     frequency = {}
+#     for item in lst:
+#         if item in frequency:
+#             frequency[item] += 1
+#         else:
+#             frequency[item] = 1
+#     return frequency
+# print(frequency_distribution(['a','b','a','c','b','a']))
+
+def greet(country):
+    greetings = {'USA':'Hello',
+                'France':'Bonjour',
+                 'Spain':'Hola',
+                 'Germany':'Hallo',
+                 'Italy':'ciao'}
+    welcome = greetings[country]
+    return welcome
+print(greet('Spain'))
+
+
+
