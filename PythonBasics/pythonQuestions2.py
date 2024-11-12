@@ -332,15 +332,33 @@
 #     return frequency
 # print(frequency_distribution(['a','b','a','c','b','a']))
 
-def greet(country):
-    greetings = {'USA':'Hello',
-                'France':'Bonjour',
-                 'Spain':'Hola',
-                 'Germany':'Hallo',
-                 'Italy':'ciao'}
-    welcome = greetings[country]
-    return welcome
-print(greet('Spain'))
+# def greet(country):
+#     greetings = {'USA':'Hello',
+#                 'France':'Bonjour',
+#                  'Spain':'Hola',
+#                  'Germany':'Hallo',
+#                  'Italy':'ciao'}
+#     welcome = greetings[country]
+#     return welcome
+# print(greet('Spain'))
+
+def to_from_list(n):
+    lst = []
+    if isinstance(n, list):
+        string = str(n)
+        return string
+    if isinstance(n, int):
+        if n == 0:
+            x = str(n)
+            lst.append(int(x))
+            return lst
+        if n>0:
+            while n>0:
+                lst.append(n%10)
+                n = n//10
+        return lst[::-1]
+print(to_from_list([1,2,3,4]))
+
 
 
 
