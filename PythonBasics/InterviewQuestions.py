@@ -71,13 +71,17 @@
 
 # Write a function to Reverse a number
 # def rev_num(num):
+#     x = num
 #     rev = 0
 #     while num>0:
 #         n = num%10
 #         rev = rev*10 + n
 #         num = num//10
-#     return rev
-# print(rev_num(1234))
+#     if rev == x:
+#         return "Palindrome"
+#     else:
+#         return "not a Palindrome"
+# print(rev_num(121))
 
 # Write a function for fibonacci Series
 # def fibonacci_series(n):
@@ -138,7 +142,7 @@
 #                 lst[i],lst[j]=lst[j],lst[i]
 #     return lst
 # print(to_sortInDescending([11,88,77,66,55,44,33,22,99]))
-#
+
 # def to_sortInAscending(lst):
 #     for i in range(0,len(lst)):
 #         for j in range(i+1,len(lst)):
@@ -164,3 +168,53 @@
 
 # 6. Finding the Greatest Common Divisor (GCD)
 # Write a function to find the GCD of two numbers.
+# def GCD(a,b):
+#     while b != 0:
+#         a, b = b, a % b
+#     return a
+# print(GCD(18,12))
+
+# 7. String and List Comparison
+# Write a function to find the longest word in a sentence and return its length.
+# def longest_word(words):
+#     max_length = len(words[0])
+#     for i in range(0,len(words)):
+#         if len(words[i])>max_length:
+#             max_length = len(words[i])
+#     return max_length
+# print(longest_word(["Apple","Date","CherryPick"]))
+
+# Write a function to merge two sorted lists into a single sorted list without using the sort function.
+# def merge_sorted_lists(list1, list2):
+#     merged_list = []
+#     i = j = 0
+#     while i < len(list1) and j < len(list2):
+#         if list1[i] < list2[j]:
+#             merged_list.append(list1[i])
+#             i += 1
+#         else:
+#             merged_list.append(list2[j])
+#             j += 1
+#     merged_list.extend(list1[i:])
+#     merged_list.extend(list2[j:])
+#     return merged_list
+# print(merge_sorted_lists([1,3,5],[2,4,6]))
+
+# 9. File Handling
+# Write a Python program to read a file line by line and print each line.
+# with open("practice.txt","r") as r:
+#     for line in r:
+#         print(line.strip())
+
+# Write a function to count the number of lines and words in a file.
+# line_count =0
+# word_count=0
+# with open("practice.txt","r") as counter:
+#     for line in counter:
+#         line_count+=1
+#         words = line.split()
+#         word_count +=len(words)
+# print(line_count,word_count)
+    
+    
+

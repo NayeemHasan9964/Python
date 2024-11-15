@@ -1,4 +1,4 @@
-Hi Everyone
-we are learning Files I/O
-using Python
 I like programming in Python
+using Python
+we are learning Files I/O
+Hi Everyone

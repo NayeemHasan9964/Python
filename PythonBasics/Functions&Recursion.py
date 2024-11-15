@@ -26,7 +26,7 @@
 
 
 # WAF to print the factorial of n(n is the parameter)
-def factorial_Of_n(n):
+# def factorial_Of_n(n):
 #     fact=1
 #     if n==0:
 #         print("Cannot start with Zero")

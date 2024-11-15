@@ -11,7 +11,7 @@
 #         return False
 #     else:
 #         return True
-# print(reverse_number(27))    
+# print(reverse_number(27))
 
 # #Function to find the number of Tallest Candles in a list:
 # def find_tallest_candles(candles):
@@ -21,7 +21,7 @@
 #         if candles[i] == max_height:
 #             count += 1
 #     return count
-# print(find_tallest_candles([5,10,3,14,5,14]))   
+# print(find_tallest_candles([5,10,3,14,5,14]))
 
 # #Function to covert a string into camel case letter
 # def camel_case(s):
@@ -49,7 +49,7 @@
 #         return True
 #     else:
 #         return False
-# print(positive_dominant([-1, -1, -2, -3, 4, 4])) 
+# print(positive_dominant([-1, -1, -2, -3, 4, 4]))
 
 #Function to multiply each number in a list with 2
 # def multiply_by_two(numbers):
@@ -61,7 +61,7 @@
 
 #Function to calculate the points of Scrabble word
 # def scrabble_points(word):
-#     lower_case = word.lower()   
+#     lower_case = word.lower()
 #     sum = 0
 #     points = {'a': 1, 'b': 3, 'c': 3,
 #                'd': 2, 'e': 1, 'f': 4,
@@ -90,7 +90,7 @@
 #      words = sentence.split()
 #      result = [word for word in words if word[0].lower() in vowels]
 #      return result
-# print(find_vowel_words('I am doing fine'))   
+# print(find_vowel_words('I am doing fine'))
 
 #Function to print sum all digits between given two numbers
 # def sum_of_digits(start,end):
@@ -99,36 +99,36 @@
 #         for digit in str(num):
 #             total_sum += int(digit)
 #     return total_sum
-# print(sum_of_digits(10,15))  
-    
+# print(sum_of_digits(10,15))
+
 #Function to find the length of the line
 # import math
 # def calculate_line_length(point1, point2):
 #     x1,y1 = point1
 #     x2,y2 = point2
 #     length_of_line = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
-#     return length_of_line   
-    
+#     return length_of_line
+
 # print(calculate_line_length((2,2),(4,6)))
 
 #Function to check if a given hand poker cards is full house
 # def is_full_house(hand):
 #      rank_counts = {}
-    
+
 #      for card in hand:
 #         rank = card[0]  # Extract the rank of the card (assuming rank is the first character)
 #         if rank in rank_counts:
 #             rank_counts[rank] += 1
 #         else:
 #             rank_counts[rank] = 1
-    
+
 #     # Get the counts of each rank
 #      counts = list(rank_counts.values())
-    
+
 #     # Check if the hand is a Full House (one 3-of-a-kind and one pair)
 #      return sorted(counts) == [2, 3]
-    
-    
+
+
 # print(is_full_house(['2','2','3','3','3']))
 
 #Function to divide chocolates among the children
@@ -188,7 +188,7 @@
 #         if (R_num > num):
 #                 return R_num
 #         else:
-#                 return num   
+#                 return num
 # print(largest_swap(27))
 
 # Fucntion to convert a string to list
@@ -211,7 +211,7 @@
 #                 return "number of seats cannot be zero"
 #         trips = (12 + seats - 1) // seats
 #         return trips
-# print(calculate_trips(0))     
+# print(calculate_trips(0))
 
 #Function to create a stutterinf effect on a given word
 # def stuttering(word):
@@ -225,21 +225,21 @@
 
 #Write a funtion that returns the list of string
 # def loves_me_not(n):
-#     x = list()    
+#     x = list()
 #     for i in range(1,n+1):
 #         if(i%2 == 0):
 #             x.append("Loves me not")
 #         if(i%2 != 0):
 #             x.append("Loves me")
-#     return x        
-# print(loves_me_not(4))        
+#     return x
+# print(loves_me_not(4))
 
 #Write a function to modify a tuple
 # def modify_tuple(tupl, elem):
 #         x = list(tupl)
 #         x .append(elem)
 #         return tuple(x)
-# print(modify_tuple((1,2,3), 4))  
+# print(modify_tuple((1,2,3), 4))
 
 #write a funtion to repeat vowels twice in String
 # def repeat_vowels(s):
@@ -249,7 +249,7 @@
 
 # def find_largest(numbers):
 #     return max(numbers)
-# print(find_largest([1,2,3,4,5]))           
+# print(find_largest([1,2,3,4,5]))
 
 #Write a fucntion that takes floating number and return reverse of that number
 # def reverse_number(num):
@@ -342,22 +342,47 @@
 #     return welcome
 # print(greet('Spain'))
 
-def to_from_list(n):
-    lst = []
-    if isinstance(n, list):
-        string = str(n)
-        return string
-    if isinstance(n, int):
-        if n == 0:
-            x = str(n)
-            lst.append(int(x))
-            return lst
-        if n>0:
-            while n>0:
-                lst.append(n%10)
-                n = n//10
-        return lst[::-1]
-print(to_from_list([1,2,3,4]))
+# def to_from_list(n):
+#     lst = []
+#     if isinstance(n, list):
+#         string = str(n)
+#         return string
+#     if isinstance(n, int):
+#         if n == 0:
+#             x = str(n)
+#             lst.append(int(x))
+#             return lst
+#         if n>0:
+#             while n>0:
+#                 lst.append(n%10)
+#                 n = n//10
+#         return lst[::-1]
+# print(to_from_list([1,2,3,4]))
+
+# def get_user_info(name, age, address):
+#     user_info = { "Name": name,
+#                   "Age": age,
+#                   "Address": address}
+#     return user_info
+# print(get_user_info("John",25,"New York"))
+
+# def calculate_power(base, exponent):
+#     return base**exponent
+# print(calculate_power(2,2))
+
+# def get_union_sum(set1,set2):
+#     lst = list(set1.union(set2))
+#     sum = 0
+#     for num in lst:
+#         sum = sum + num
+#     return sum
+# print(get_union_sum({1,2,3,4},{2,3,4,5}))
+
+a = 48
+b = 18
+a,b = b,a%b
+print(a,b)
+
 
 
 
