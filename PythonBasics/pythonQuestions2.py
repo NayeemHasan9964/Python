@@ -378,10 +378,7 @@
 #     return sum
 # print(get_union_sum({1,2,3,4},{2,3,4,5}))
 
-a = 48
-b = 18
-a,b = b,a%b
-print(a,b)
+
 
 
 
