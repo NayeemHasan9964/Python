@@ -3,7 +3,7 @@ def longestCommonPrefix(strs):
     if not strs:
         return ""
 
-    # Start with the first string as the prefix
+    # Start with the first string as the prefix:
     prefix = strs[0]
 
     # Compare the prefix with each string in the array
@@ -20,8 +20,13 @@ def longestCommonPrefix(strs):
 
 
 # Example usage:
-strings = ["flower", "flow", "flight"]
+strings = ["flower", "flowering", "flight"]
 print(longestCommonPrefix(strings))  # Output: "fl"
 
 strings = ["dog", "racecar", "car"]
 print(longestCommonPrefix(strings))  # Output: ""
+
+# strings = ["flower", "flow", "flight"]
+# prefix = strings[0]
+# for  string in strings[1:]:
+#     print(string)
