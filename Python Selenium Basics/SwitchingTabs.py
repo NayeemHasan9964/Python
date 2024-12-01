@@ -1,28 +1,29 @@
 import time
-
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.ie.options import Options
 
-# chrome_option = Options()
-# chrome_option.add_argument("--incognito")
+# List of URLs to visit
+switchingTab = ["https://www.google.com", "https://www.linkedin.com/feed/", "https://www.amazon.com/"]
+
+# Initialize the browser
 driver = webdriver.Chrome()
-#switchingTab = ["https://www.google.com","https://www.linkedin.com/feed/","https://www.amazon.com/"]
-driver.maximize_window()
 
-# for i in switchingTab:
-#     driver.switch_to.new_window("tab")
-#     driver.get(i)
-#     time.sleep(3)
-#     driver.close()
+try:
+    driver.maximize_window()
 
-driver.get("https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F")
-driver.find_element(By.ID,"username").send_keys("snayeem341@gmail.com")
-driver.find_element(By.ID,"password").send_keys("Sonuzz@9964")
-# driver.find_element(By.XPATH,"//input[@name = 'rememberMeOptIn']").click()
-driver.find_element(By.CSS_SELECTOR, "button[aria-label='Sign in']").click()
+    for i in switchingTab:
+        # Open a new tab
+        driver.switch_to.new_window('tab')
+
+        # Navigate to the URL
+        driver.get(i)
+
+        # Pause to allow the page to load
+        time.sleep(3)
+
+    # Add additional logic here if needed
+
+finally:
+    # Quit the browser after all actions
+    driver.quit()
 
 
-
-
-time.sleep(3)

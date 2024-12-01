@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Selenium Basics/SwitchingTabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Selenium Basics/SwitchingTabs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PytestsDemo/test_passingDataFromFixtures.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PythonBasics/MockInterview.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nVwPQ5TyuOVuRasomse9TIY508" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_e2e.EndToEndTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_e2e.EndToEndTest.test_e2e.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_e2e.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_LoggingDemo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_demo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_demo2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_e2e.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_fixturesDemo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_passingDataFromFixtures.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CheckBoxesAndRadioButtons.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChidlWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChildWindowAssignment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CommonPrefix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.End2EndTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExecptionHandling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExplicitAndImplicitWaits.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandleAutoSuggestiveDropDowns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandlingFrames.executor&quot;: &quot;Run&quot;,
+    &quot;Python.InterviewQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Miscellaneous.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MockInterview.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PalindromNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RomanToInt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SortTables.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.SwitchingTabs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.actionsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.alerts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chromeOptionsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demobrowser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inheritance2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inhertanceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locatorsExtension.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pythonQuestions2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.readWriteFile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Python/PythonSelenium/PythonSeleniumFramework/test_e2e.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Python.pythonQuestions2">
+    <configuration name="CommonPrefix" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LeetCode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LeetCode/CommonPrefix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="InterviewQuestions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonBasics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MockInterview" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonBasics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonBasics/MockInterview.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SwitchingTabs" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Selenium Basics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Selenium Basics/SwitchingTabs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pythonQuestions2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonBasics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in C:\Python\PythonSelenium\PythonSeleniumFramework\test_e2e.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="Python" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PytestsDemo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;C:\\Python\\PythonSelenium\\PythonSeleniumFramework\\test_e2e.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.MockInterview" />
+      <item itemvalue="Python.SwitchingTabs" />
+      <item itemvalue="Python.pythonQuestions2" />
+      <item itemvalue="Python.CommonPrefix" />
+      <item itemvalue="Python.InterviewQuestions" />
+      <item itemvalue="Python tests.pytest in C:\Python\PythonSelenium\PythonSeleniumFramework\test_e2e.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.pythonQuestions2" />
+        <item itemvalue="Python.InterviewQuestions" />
+        <item itemvalue="Python.SwitchingTabs" />
+        <item itemvalue="Python.MockInterview" />
+        <item itemvalue="Python.CommonPrefix" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="" />
+      <created>1729071528607</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729071528607</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -151,7 +151,7 @@
 #     return [min(a),min(b),min(c)]
 # print(find_smallest([[1,2,3],[4,5,6],[7,8,9]]))
 
-#Function to replace the an item in a list with a new item,if the item is found in the list
+#Function to replace the  item in a list with a new item,if the item is found in the list
 # def replace_item(lst, old_item, new_item):
 #     for i in range(0,len(lst)):
 #         if lst[i] == old_item:
@@ -357,7 +357,7 @@
 #                 lst.append(n%10)
 #                 n = n//10
 #         return lst[::-1]
-# print(to_from_list([1,2,3,4]))
+# print(to_from_list(0))
 
 # def get_user_info(name, age, address):
 #     user_info = { "Name": name,
@@ -377,6 +377,39 @@
 #         sum = sum + num
 #     return sum
 # print(get_union_sum({1,2,3,4},{2,3,4,5}))
+
+# def single_occurrence(s):
+#     char= s[0]
+#     count = 0
+#     for chars in range(0,len(s)):
+#         if char == s[chars]:
+#             count = count + 1
+#     if count>1:
+#         return "OccurredTwice"
+#     else:
+#         return char
+# print(single_occurrence("Hello HWorld"))
+
+def min_removals_for_even_sum(numbers):
+    current_sum = sum(numbers)
+    removals = 0
+    for num in numbers:
+        if current_sum % 2 == 0:
+            return removals
+        current_sum -= num
+        removals += 1
+    return removals
+
+# Test the function
+numbers = [7, 9, 11]
+result = min_removals_for_even_sum(numbers)
+print(f"Minimum removals to get an even sum: {result}")
+
+
+
+
+
+
 
 
 

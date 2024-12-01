@@ -215,6 +215,45 @@
 #         words = line.split()
 #         word_count +=len(words)
 # print(line_count,word_count)
-    
-    
+
+# Write a function using Try,except and Final Block
+# def catch_exception(a,b):
+#     try:
+#         result = a//b
+#         return  result
+#     except Exception as e:
+#         print(e)
+#     finally:
+#         print("Executed Successfully")
+# print(catch_exception(10,0))
+
+# Write a function for Perfect Number
+# def perfect_Number(num):
+#     divisors= []
+#     if num <= 1:
+#         return False
+#     for i in range(1,num):
+#         if num % i == 0:
+#             divisors.append(i)
+#     print(divisors)
+#     if sum(divisors)== num:
+#         return "PerfectNumber"
+#     else:
+#         return "Not a PerfectNumber"
+# print(perfect_Number(496))
+
+# class primeNumber:
+#     @staticmethod
+#     def primeOrNot(n):
+#         for i in  range(2,n):
+#             if n%i==0:
+#                 break
+#             else:
+#                 return n
+# obj = primeNumber()
+# print(obj.primeOrNot(5))
+
+
+
+
 
