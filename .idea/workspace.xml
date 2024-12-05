@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Selenium Basics/SwitchingTabs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Selenium Basics/SwitchingTabs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

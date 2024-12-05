@@ -390,20 +390,87 @@
 #         return char
 # print(single_occurrence("Hello HWorld"))
 
-def min_removals_for_even_sum(numbers):
-    current_sum = sum(numbers)
-    removals = 0
-    for num in numbers:
-        if current_sum % 2 == 0:
-            return removals
-        current_sum -= num
-        removals += 1
-    return removals
+# def min_removals_for_even_sum(numbers):
+# #     current_sum = sum(numbers)
+# #     removals = 0
+# #     for num in numbers:
+# #         if current_sum % 2 == 0:
+# #             return removals
+# #         current_sum -= num
+# #         removals += 1
+# #     return removals
+# #
+# # # Test the function
+# # numbers = [7, 9, 11]
+# # result = min_removals_for_even_sum(numbers)
+# # print(f"Minimum removals to get an even sum: {result}")
 
-# Test the function
-numbers = [7, 9, 11]
-result = min_removals_for_even_sum(numbers)
-print(f"Minimum removals to get an even sum: {result}")
+# def reverseArray(lst):
+#     rv =[]
+#     for i in range(len(lst)-1,-1,-1):
+#         rv.append(lst[i])
+#     return rv
+#
+# print(reverseArray([1,4,3,2]))
+
+# def fizzBuzz(n):
+#     for i in range(1,n):
+#         if i%3==0 and i%5==0:
+#             print('FizzBuzz')
+#         elif i%3==0:
+#             print('Fizz')
+#         elif i%5==0:
+#             print('Buzz')
+#         else:
+#             print(i)
+# print(fizzBuzz(20))
+
+# def decrypt_password(encrypted_password):
+#     decrypted_password = ""  # To store the result
+#     i = 0
+#     temp_number = ""  # To store numbers temporarily
+#
+#     while i < len(encrypted_password):
+#         if i + 1 < len(encrypted_password) and encrypted_password[i].islower() and encrypted_password[i + 1].isupper():
+#             # Rule 2: Swap lowercase and uppercase, add '*'
+#             decrypted_password += encrypted_password[i + 1] + encrypted_password[i] + '*'
+#             i += 2  # Move to the next pair
+#         elif encrypted_password[i].isdigit():
+#             # Rule 3: Replace number with 0 and place number at the start
+#             temp_number += encrypted_password[i]  # Store the number
+#             decrypted_password += '0'
+#             i += 1  # Move to the next character
+#         else:
+#             # Rule 4: No modification, just add the character
+#             decrypted_password += encrypted_password[i]
+#             i += 1  # Move to the next character
+#
+#     # Prepend the collected numbers to the result
+#     decrypted_password = temp_number + decrypted_password
+#
+#     return decrypted_password
+#
+#
+# # Example usage
+# encrypted = "hAck3rr4nk"
+# result = decrypt_password(encrypted)
+# print(result)  # Output: "43Ah*ck0rr0nk"
+
+def first_n_vowels(string, n):
+    vowels = "aeiouAEIOU"
+    count = 0
+    lst = []
+    for char in string:
+        if char in vowels:
+            count += 1
+            lst.append(char)
+    if count < n:
+        return "Not found"
+    else:
+        return lst
+print(first_n_vowels('Hello World',3))
+
+
 
 
 
