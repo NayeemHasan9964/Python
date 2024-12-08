@@ -456,19 +456,29 @@
 # result = decrypt_password(encrypted)
 # print(result)  # Output: "43Ah*ck0rr0nk"
 
-def first_n_vowels(string, n):
-    vowels = "aeiouAEIOU"
+# def first_n_vowels(string, n):
+#     vowels = "aeiouAEIOU"
+#     count = 0
+#     lst = []
+#     for char in string:
+#         if char in vowels:
+#             count += 1
+#             lst.append(char)
+#     if count < n:
+#         return "Not found"
+#     else:
+#         return lst
+# print(first_n_vowels('Hello World',3))
+
+def mean_of_digits(n):
+    sum_digits = 0
     count = 0
-    lst = []
-    for char in string:
-        if char in vowels:
-            count += 1
-            lst.append(char)
-    if count < n:
-        return "Not found"
-    else:
-        return lst
-print(first_n_vowels('Hello World',3))
+    while n>0:
+        sum_digits= sum_digits + n%10
+        count = count + 1
+        n = n//10
+    return sum_digits/count
+print(mean_of_digits(12345))
 
 
 
