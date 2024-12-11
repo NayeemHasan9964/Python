@@ -470,15 +470,42 @@
 #         return lst
 # print(first_n_vowels('Hello World',3))
 
-def mean_of_digits(n):
-    sum_digits = 0
-    count = 0
-    while n>0:
-        sum_digits= sum_digits + n%10
-        count = count + 1
-        n = n//10
-    return sum_digits/count
-print(mean_of_digits(12345))
+# def mean_of_digits(n):
+#     sum_digits = 0
+#     count = 0
+#     while n>0:
+#         sum_digits= sum_digits + n%10
+#         count = count + 1
+#         n = n//10
+#     return sum_digits/count,count
+# print(mean_of_digits(12345))
+
+# def index_shuffle(txt):
+#     string_even = ''
+#     string_odd = ''
+#     for i in range(0,len(txt)):
+#         if i%2==0:
+#             string_even = string_even+txt[i]
+#         elif i%2!=0:
+#             string_odd = string_odd + txt[i]
+#     return string_even+string_odd
+# print(index_shuffle('abcdef'))
+
+# def check_number(n):
+#     print(n%10%2 ^ n//10%2)
+#     return bool(n%10%2 ^ n//10%2)
+# print(check_number(12))
+
+def is_divisible(numbers):
+    num_sum = sum(numbers)
+    print(num_sum)
+    num_prod = 1
+    for nums in range(0,len(numbers)):
+        num_prod = numbers[nums]*num_prod
+        print(num_prod)
+    return bool(num_prod//num_sum)
+print(is_divisible([10,20,30]))
+
 
 
 
