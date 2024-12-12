@@ -496,15 +496,20 @@
 #     return bool(n%10%2 ^ n//10%2)
 # print(check_number(12))
 
-def is_divisible(numbers):
-    num_sum = sum(numbers)
-    print(num_sum)
-    num_prod = 1
-    for nums in range(0,len(numbers)):
-        num_prod = numbers[nums]*num_prod
-        print(num_prod)
-    return bool(num_prod//num_sum)
-print(is_divisible([10,20,30]))
+# def is_divisible(numbers):
+#     num_sum = sum(numbers)
+#     print(num_sum)
+#     num_prod = 1
+#     for nums in range(0,len(numbers)):
+#         num_prod = numbers[nums]*num_prod
+#         print(num_prod)
+#     return bool(num_prod//num_sum)
+# print(is_divisible([10,20,30]))
+
+def count_arguments(*args):
+    return len(args)
+print(count_arguments(1,2,3,4))
+
 
 
 
