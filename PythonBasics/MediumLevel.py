@@ -36,5 +36,40 @@
 #     return s2
 # print(can_segment_string(words = ['apple', 'pear', 'pier', 'pie']))
 
+#Spongcase letter
+def sponge_case(text):
+    result = []
+    count = 1
+    for i in text:
+        if i == ' ':
+            result.append(i)
+        elif count % 2 == 0:
+            result.append(i.upper())
+            count += 1
+        else:
+            result.append(i.lower())
+            count += 1
+    return ''.join(result)
+print(sponge_case('PROGRAMIZPRO123'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

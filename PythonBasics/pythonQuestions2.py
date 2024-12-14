@@ -506,9 +506,21 @@
 #     return bool(num_prod//num_sum)
 # print(is_divisible([10,20,30]))
 
-def count_arguments(*args):
-    return len(args)
-print(count_arguments(1,2,3,4))
+# def count_arguments(*args):
+#     return len(args)
+# print(count_arguments(1,2,3,4))
+
+# def replace_vowels(string, char):
+#         vowels = 'aeiouAEIOU'
+#         replaced_text = ''
+#         for chars in string:
+#             if chars in vowels:
+#                 replaced_text = replaced_text + char
+#             else:
+#                 replaced_text = replaced_text + chars
+#         return replaced_text
+# print(replace_vowels('hello world','x'))
+
 
 
 
