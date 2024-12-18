@@ -117,8 +117,8 @@
 #             max_num = lst[i]
 #         elif lst[i]<min_num:
 #             min_num = lst[i]
-#     return max_num,min_num
-# print(max_min_numInList([13,23,11,45,38,68]))
+#     return min_num,max_num
+# print(max_min_numInList([100,180,240,310,40,535,695]))
 # Write a function to remove duplicates from a list.
 # def to_removeDuplicates(lst):
 #     i = 0

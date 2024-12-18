@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" afterDir="false" />
     </list>
@@ -228,8 +229,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.MediumLevel" />
-        <item itemvalue="Python.pythonQuestions2" />
         <item itemvalue="Python.InterviewQuestions" />
+        <item itemvalue="Python.pythonQuestions2" />
         <item itemvalue="Python.SwitchingTabs" />
         <item itemvalue="Python.MockInterview" />
       </list>

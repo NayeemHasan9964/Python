@@ -521,6 +521,25 @@
 #         return replaced_text
 # print(replace_vowels('hello world','x'))
 
+# def check_letter(string, letter):
+#     for char in string:
+#         if char in letter:
+#             return True
+#     return False
+# print(check_letter('Hello','l'))
+
+# def virtual_dac(binary):
+#     decimalOfBinary = 0
+#     length = len(binary)
+#     for num in range(length):
+#         decimalOfBinary += int(binary[length - num - 1]) * (2 ** num)
+#     return decimalOfBinary
+# print(virtual_dac('1010'))
+
+
+
+
+
 
 
 
