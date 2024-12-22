@@ -5,6 +5,8 @@
 #             return True
 #     return False
 # print(is_pronic(6))
+from numpy.ma.core import count
+
 
 #Broken KeyBoard
 # def can_type(keys, word):
@@ -195,6 +197,193 @@
 # print(is_prime_diagonal([[2,0],[0,5]]))
 
 #Total Time for Journey
-def car_timer(times):
-    return sum(times)
-print(car_timer([10,20,30]))
+# def car_timer(times):
+#     return sum(times)
+# print(car_timer([10,20,30]))
+
+#diff b/w two colors using Euclidean Formula
+# import math
+# def color_difference(color1, color2):
+#     one = color1[0]- color2[0]
+#     two = color1[1]-  color2[1]
+#     three = color1[2]- color2[2]
+#     E_D = math.sqrt((one**2) + (two**2) + (three**2))
+#     return round(E_D,2)
+# print(color_difference((255,255,255),(0,0,0)))
+
+#Calculate the area of in-circle and circum-circle
+# import math
+# def calculate_circle_areas(square_area):
+#     a=math.sqrt(square_area)
+#     b=math.sqrt(2*a*a)
+#     return (round(math.pi*(a/2)*(a/2),2),round(math.pi*(b/2)*(b/2),2))
+# print(calculate_circle_areas(25))
+
+#line_length
+# import math
+# def calculate_line_length(point1, point2):
+#     first_equation = point2[0]-point1[0]
+#     print(first_equation)
+#     second_equation = point2[1]-point1[1]
+#     print(second_equation)
+#     length = math.sqrt(first_equation**2 + second_equation**2)
+#     return round(length,2)
+# print(calculate_line_length((15,7),(22,11)))
+
+#Mersene_primes
+# def mersenne_primes(n):
+#     l1=[]
+#     l2=[]
+#     for i in range (2,50):
+#         m=2**i-1
+#         if m<n:
+#             l1.append(m)
+#     for i in l1:
+#         c=0
+#         for j in range(2,i):
+#             if i % j==0:
+#                 c+=1
+#             else:
+#                 c+=0
+#         if c==0:
+#             l2.append(i)
+#     return l2
+# print(mersenne_primes(130))
+
+#Composite Number
+# def is_composite(n):
+#     count = 0
+#     for i in range(2,n):
+#         if n%i==0:
+#             count += 1
+#     if count>=1:
+#         return True
+#     else:
+#         return False
+# print(is_composite(4))
+
+#Weird Number
+# def is_weird(n):
+#     if n % 2 != 0:
+#         return "Weird"
+#     elif n % 2 == 0 and 2 <= n <= 5:
+#         return "Not Weird"
+#     elif n % 2 == 0 and 6 <= n <= 20:
+#         return "Weird"
+#     elif n % 2 == 0 and n > 20:
+#         return "Not Weird"
+
+# Replace Chars
+# def replace_chars(string, replacements):
+#     for i in replacements:
+#         string=string.replace(i,replacements[i])
+#     return string
+# print(replace_chars('goodbye',{'g':'b','o':'a','d':'y'}))
+
+# Frog Jump
+# def frog_jump(numbers):
+#     jumps=0
+#     curr_num=numbers[0]
+#     for j in numbers:
+#         if j>curr_num:
+#             curr_num=j
+#             jumps+=1
+#     return jumps
+# print(frog_jump([2,1,3,4]))
+
+# Two friends Meet
+# def meeting_time(friend1, friend2):
+#     start_time1, speed1 = friend1
+#     start_time2, speed2 = friend2
+#
+#     # Calculate the time difference between the friends
+#     time_difference = abs(start_time2 - start_time1)
+#
+#     # Calculate the meeting time
+#     meeting_time = time_difference / (speed1 + speed2)
+#
+#     return round(meeting_time, 2)
+#
+# print(meeting_time((2,3),(3,2)))
+
+# Last digit of a number in a list
+# def end_letters(numbers):
+#     last_digits = []
+#     for i in  range(0,len(numbers)):
+#         last_digits.append(str(numbers[i]%10))
+#     return str(last_digits)
+# print(end_letters([123,456,789]))
+
+# Johny is making process or not
+# def is_johnny_making_progress(day1, day2, day3):
+#     if (day2>day1) and (day3>day2):
+#         return True
+#     else:
+#         return False
+# print(is_johnny_making_progress(1,2,3))
+
+# convert List to Dict
+# def lists_to_dict(list1, list2):
+#     listToDict = {}
+#     for i in range(len(list1)):
+#         listToDict[list1[i]] = list2[i]
+#     return listToDict
+# print(lists_to_dict(['a','b','c'],[1,2,3]))
+
+#Add the Values of symbols in Matrix
+# def add_matrix_values(matrix):
+#     s = matrix[0][0]
+#     for x in matrix:
+#         if '+' in x:
+#             s += x[-1]
+#         elif '-' in x:
+#             s -= x[-1]
+#         elif '*' in x:
+#             s *= x[-1]
+#         elif '/' in x and x!=0:
+#             s /= x[-1]
+#     return s
+# print(add_matrix_values([[1, '+', 2], ['-', 3], ['*', 2]]))
+
+#Count Likes and Dislikes
+# def count_votes(votes):
+#     vote_counts = {'likes': 0, 'dislikes': 0}
+#     for vote in votes:
+#         if vote == 'like':
+#             vote_counts['likes'] += 1
+#         elif vote == 'dislike':
+#             vote_counts['dislikes'] += 1
+#     return vote_counts
+# print(count_votes(['like','dislike','like','like']))
+
+# number with a Thousand Seperator
+# def format_number(n):
+#     s = ''
+#     i = 0
+#     while n:
+#         if i != 3:
+#             s += str(n % 10)
+#             n //= 10
+#             i += 1
+#         else:
+#             s += ','
+#             i = 0
+#     return s[::-1]
+# print(format_number(1000000))
+
+# Number is Prime or Not
+# def is_prime(n):
+#     for i in range(2,n):
+#         if n%i==0:
+#             return False
+#         else:
+#             return True
+# print(is_prime(5))
+
+
+
+
+
+
+
+            

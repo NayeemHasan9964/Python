@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/InterviewQuestions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" afterDir="false" />
     </list>
@@ -239,7 +238,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
       </set>
     </attachedChunks>
   </component>
