@@ -380,6 +380,169 @@ from numpy.ma.core import count
 #             return True
 # print(is_prime(5))
 
+# Sort Books Based on Author
+# def sort_books(books):
+#     return sorted(books, key=lambda x: x["author"])
+
+# Count Leap Years in the Range
+# def count_leap_years(start_year, end_year):
+#     leapYearCount = 0
+#     for i in range(start_year,end_year+1):
+#         if (i%4==0 and i%100!=0) or (i%400==0 and i%100==0):
+#             leapYearCount += 1
+#     return leapYearCount
+# print(count_leap_years(2000,2020))
+
+# Numeric SeeSaw
+# def numeric_seesaw(n):
+#     seeSawList = []
+#     for i in range(1,n+1):
+#         seeSawList.append(i)
+#     for i in range(n-1,0,-1):
+#         seeSawList.append(i)
+#     return seeSawList
+# print(numeric_seesaw(5))
+
+# Pan Digital
+# def is_pandigital(n):
+#     numString = str(n)
+#     for i in range(0,10):
+#         if str(i) in numString:
+#             return True
+#         return False
+# print(is_pandigital(1234567890))
+
+#Diagonnaly Dominannt
+# def is_diagonally_dominant(matrix):
+#     n = len(matrix)
+#     for i in range(n):
+#         row_sum = sum(abs(matrix[i][j]) for j in range(n) if j != i)
+#         if abs(matrix[i][i]) < row_sum:
+#             return False
+#     return True
+# matrix = [
+#     [3, -1, 1],
+#     [1, 7, 1],
+#     [2, -3, 9]
+# ]
+# print(is_diagonally_dominant(matrix))  # Output: True
+
+# Find the missing Positive number
+# def find_missing(numbers):
+#     # Consider only positive numbers
+#     positives = [num for num in numbers if num > 0]
+#     positives = sorted(set(positives))  # Remove duplicates and sort
+#     smallest_missing = 1  # Start checking from 1
+#
+#     for num in positives:
+#         if num == smallest_missing:
+#             smallest_missing += 1  # Increment if the number is present
+#         elif num > smallest_missing:
+#             break  # Gap found, smallest_missing is the answer
+#
+#     return smallest_missing
+# print(find_missing([7,8,9,11,12]))
+
+# Find Adjacent
+# def find_adjacent_nodes(graph, node):
+#     for i in range(1,len(graph)):
+#         return graph[str(node)]
+# print(find_adjacent_nodes({'1':['2','3'],'2':['1','3'],'3':['1','2']},1))
+
+# Even and Odd Partition
+# def even_odd_partition(numbers):
+#     even_list = []
+#     odd_list = []
+#     for num in numbers:
+#         if num%2==0:
+#             even_list.append(num)
+#         else:
+#             odd_list.append(num)
+#     return even_list,odd_list
+# print(even_odd_partition([1,2,3,4,5]))
+
+# Function to generate nth carol number
+# def carol_number(n):
+#   return (2**n-1)**2-2
+# print(carol_number(3))
+
+# Swap keys and Values of a Dictionary
+# def swap_dictionary(dict1):
+#     dictSwap = {}
+#     for keys,values in dict1.items():
+#         dictSwap[values]=keys
+#     return dictSwap
+# print(swap_dictionary({'a':1,'b':2,'c':3}))
+
+# Generate Combinations
+# from itertools import combinations
+# def generate_combinations(lst, n):
+#     possibleCombinations = combinations(lst,n)
+#     return list(possibleCombinations)
+# print(generate_combinations(['a','b','c','d'],2))
+
+# Matrix To String
+# def matrix_to_string(matrix):
+#     globalstring = ""
+#     for i in range(0, len(matrix)):
+#         for i1 in matrix[i]:
+#             globalstring += i1
+#     return globalstring
+# print(matrix_to_string([['h','e','l','l','o'],['w','o','r','l','d']]))
+
+# numbers in a list are Prime
+# def all_primes(numbers):
+#     def is_prime(num):
+#         if num < 2:
+#             return False
+#         for i in range(2, int(num ** 0.5) + 1):
+#             if num % i == 0:
+#                 return False
+#         return True
+#
+#     for number in numbers:
+#         if not is_prime(number):
+#             return False
+#     return True
+#
+# print(all_primes([29, 31, 36, 37]))
+
+# Get Values from Dictionary
+# def get_dictionary_values(dict1):
+#     dictValues = []
+#     for keys,values in dict1.items():
+#         dictValues.append(values)
+#     return dictValues
+# print(get_dictionary_values({'a':1,'b':2,'c':3}))
+
+# Split based on Capital letter
+# def capital_split(s):
+#     lst = []
+#     for i in range(len(s)):
+#         if s[i].isupper():
+#             for j in range(i+1, len(s)):
+#                 if s[j].isupper():
+#                     lst.append(s[i:j])
+#                     break
+#                 if s[-1] == s[j]:
+#                     lst.append(s[i:])
+#     return lst
+# print(capital_split('heLloWorld'))
+
+# Fulcrum of the List
+# def find_fulcrum(lst):
+#     for i in range(len(lst)):
+#         left_sum = sum(lst[:i])
+#         right_sum = sum(lst[i + 1:])
+#
+#         if left_sum == right_sum:
+#             return i
+#     return 'None'
+# print(find_fulcrum([3,7,2,4,6]))
+
+
+
+
 
 
 
