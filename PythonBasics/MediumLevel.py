@@ -536,10 +536,75 @@ from numpy.ma.core import count
 #         right_sum = sum(lst[i + 1:])
 #
 #         if left_sum == right_sum:
-#             return i
+#             return lst[i]
 #     return 'None'
-# print(find_fulcrum([3,7,2,4,6]))
+# print(find_fulcrum([7,-1,0,-1,7]))
 
+# Another Solution for Fulcrum
+# def find_fulcrum(lst):
+#     total_sum = sum(lst)
+#     left_sum = 0
+#
+#     for i in range(len(lst)):
+#         right_sum = total_sum - left_sum - lst[i]
+#         print(right_sum)
+#         if left_sum == right_sum:
+#             return lst[i]
+#         left_sum += lst[i]
+#     return None
+# print(find_fulcrum([7,-1,0,-1,7]))
+
+# Count the Digits
+# def count_digits(n):
+#     digiCount = []
+#     while n>0:
+#         digiCount.append(n%10)
+#         n = n//10
+#     return len(digiCount)
+# print(count_digits(1000))
+
+# Find the intersection of two intervals
+# def intersect_intervals(interval1, interval2):
+#     a,c = interval1
+#     b,d = interval2
+#     start = max(a,b)
+#     end = min(c,d)
+#     if start <= end:
+#         return [start,end]
+#     else:
+#         return 'None'
+# print(intersect_intervals([1,3],[5,7]))
+
+# Find Given number is Ugly or Not
+# def is_ugly(number):
+#     if number <= 0:
+#         return False
+#     for factor in [2, 3, 5]:
+#         while number % factor == 0:
+#             number //= factor
+#             print(number)
+#     return number == 1
+# print(is_ugly(6))
+# print(is_ugly(14))
+
+
+#Find Median from an integer List
+# def find_median(nums1, nums2):
+#     s1 = sorted(nums1)
+#     s2 = sorted(nums2)
+#     merged_list = []
+#     i = j = 0
+#     while i < len(s1) and j < len(s2):
+#         if s1[i] < s2[j]:
+#             merged_list.append(s1[i])
+#             i += 1
+#         else:
+#             merged_list.append(s2[j])
+#             j += 1
+#     merged_list.extend(s1[i:])
+#     merged_list.extend(s2[j:])
+#     return merged_list
+# print(find_median([1,5,3],[4,2]))
 
 
 
