@@ -5,7 +5,6 @@
 #             return True
 #     return False
 # print(is_pronic(6))
-from numpy.ma.core import count
 
 
 #Broken KeyBoard
@@ -603,15 +602,62 @@ from numpy.ma.core import count
 #             j += 1
 #     merged_list.extend(s1[i:])
 #     merged_list.extend(s2[j:])
-#     return merged_list
-# print(find_median([1,5,3],[4,2]))
+#     if len(merged_list)%2==1:
+#         return merged_list[len(merged_list)//2]
+#     else:
+#         mid1 = merged_list[len(merged_list)//2 - 1]
+#         print(mid1)
+#         mid2 = merged_list[len(merged_list)//2]
+#         print(mid2)
+#         return (mid1+mid2)/2
+# print(find_median([1,2],[3,4]))
 
+# Filter Positives
+# def filter_positives(lst):
+#     positive_list = []
+#     for num in lst:
+#         if num>0:
+#             positive_list.append(num)
+#     return positive_list
+# print(filter_positives([5,3,-2,1,0]))
 
+#Arthimetic Dictionary
+# def arithmetic_operations(a,b):
+#     arithmetic_operations_dict = {}
+#     stringList = ['Addition','Subtraction','Multiplication','Division']
+#     arithmetic_operations_dict = {stringList[0]:a+b,
+#                                   stringList[1]:a-b,
+#                                   stringList[2]:a*b,
+#                                   stringList[3]:a/b
+#                                  }
+#     return arithmetic_operations_dict
+# print(arithmetic_operations(5,2))
 
+#Closet Points to Origin (0,0)
+# import math
+# def closest_points(points_list,k):
+#     distances = [(math.sqrt(x**2 + y**2), (x, y)) for x, y in points_list]
+#     distances.sort()
+#     closest_k_points = [point for _, point in distances[:k]]
+#     return closest_k_points
+# print(closest_points([(1,3),(-2,2)],1))
 
+# Broken KeyBoard
+# def can_type(keys, word):
+#     for w in word:
+#         if w not in keys:
+#             return False
+#     return True
+# print(can_type('abcdefg','bag'))
 
+# Two List Intersection
+# def lst_intersection(nums1, nums2):
+#     a = set(nums1)
+#     b = set(nums2)
+#     return sorted(a & b)
+# print(lst_intersection([1,2,3,4],[4,3,5]))
 
-
+#
 
 
             
