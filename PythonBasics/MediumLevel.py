@@ -657,7 +657,139 @@
 #     return sorted(a & b)
 # print(lst_intersection([1,2,3,4],[4,3,5]))
 
+# Find largest Gap
+# def largest_gap(numbers):
+#     a = []
+#     for i in range(len(numbers)):
+#         a.append(numbers[i] - numbers[i - 1])
+#         print(numbers[i] - numbers[i - 1])
+#     return max(a)
+# print(largest_gap([1,3,6,7,8]))
+
+# Reverse a List
+# def reverse_list(numbers):
+#     reverse = []
+#     for i in range(len(numbers)-1,-1,-1):
+#         reverse.append(numbers[i])
+#     return reverse
+# print(reverse_list([7,2,5,2,4]))
+
+
+# return Duplicates From list
+# def find_duplicates(numbers):
+#     duplicates = []
+#     for i in range(0,len(numbers)):
+#         for j in range(i+1,len(numbers)):
+#             if numbers[i]==numbers[j]:
+#                 duplicates.append(numbers[i])
+#     return duplicates
+# print(find_duplicates([1,2,3,2,1]))
+
+# To Calculate the sum of harmonic series
+# def harmonic_sum(n):
+#     hs = 1
+#     for i in range(1,n):
+#         hs = hs + (1/(i+1))
+#     return round(hs,2)
+# print(harmonic_sum(6))
+
+# Swap first and last elements
+# def swap_elements(lst):
+#     lst[0],lst[-1] = lst[-1],lst[0]
+#     return lst
+# print(swap_elements(['apple','banana','cherry']))
+
+# Identify Formation
+# def identify_formation(s):
+#     lst = s.split()
+#     string1 = lst[0]
+#     string2 = lst[-1]
+#     print(len(lst),len(string1),len(string2))
+#     if len(string1) > len(string2) or len(lst) == 2:
+#         return "Stalactites"
+#     elif len(string1) < len(string2):
+#         return "Stalagmites"
+#     else:
+#         return "Both"
+# print(identify_formation('#####\n #\n #\n #\n #'))
+
+# Count each card frequency in a Deck
+# def is_x_of_a_kind(deck, x):
+#     frequency = {}
 #
+#     for number in deck:
+#         if number in frequency:
+#             frequency[number] += 1
+#         else:
+#             frequency[number] = 1
+#
+#     for count in frequency.values():
+#         if count != x:
+#             return False
+#
+#     return True
+# print(is_x_of_a_kind([1,2,3,1,2,3],2))
+
+# Another Method
+# def is_x_of_a_kind(deck, x):
+#     return len(deck) / len(set(deck)) == x
+# print(is_x_of_a_kind([1,2,3,1,3],2))
+
+# Digital decipher
+# def digital_decipher(s,key):
+#     ASCII_values = []
+#     for char in s:
+#         ASCII_values.append(ord(char)-key)
+#     Deciphered_chars = [chr(value) for value in ASCII_values]
+#     return ''.join(Deciphered_chars)
+# print(digital_decipher('hij',2))
+
+# Probability of selecting letter 'A'
+# def probability_of_a(s):
+#     countOfA = 0
+#     for char in s:
+#         if char == 'a':
+#             countOfA += 1
+#     probabilty = countOfA/len(s)
+#     return round(probabilty,2)
+# print(probability_of_a('banana'))
+
+# Concatenate Two Lists
+# def concatenate_lists(list1, list2,target):
+#     for num in list2:
+#         list1.append(num)
+#     return list1==target
+# print(concatenate_lists([1,2],[3,4],[1,2,3,4]))
+
+# To get Student Top Note
+# def get_top_notes(student_notes):
+#     max_values_dict = {key:max(value or [0]) for key,value in student_notes.items()}
+#     return max_values_dict
+# print(get_top_notes({'John':[3,4,5],'Jane':[6,7,8]}))
+
+# Cullen Number
+# def generate_cullen_numbers(n):
+#     CullenList = []
+#     for i in range(0,n):
+#         CullenList.append( (2**i)*i + 1 )
+#     return CullenList
+# print(generate_cullen_numbers(5))
+
+# Accumulating the Product of a list of numbers
+# class Solution:
+#     def __init__(self):
+#         self.product = []
+#
+#     def accumulating_product(self, numbers):
+#         for i in range(len(numbers)):
+#             if len(self.product) == 0:
+#                 self.product.append(numbers[i])
+#             else:
+#                 self.product.append(self.product[-1] * numbers[i])
+#         return self.product
+# s = Solution()
+# result = s.accumulating_product([1, 2, 3, 4])
+# print(result)
 
 
-            
+
