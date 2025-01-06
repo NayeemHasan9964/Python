@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bca50716-79ff-4cc1-8af3-d0488a2bfc76" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/MediumLevel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/pythonQuestions2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PythonBasics/MediumQuestions2.py" beforeDir="false" afterPath="$PROJECT_DIR$/PythonBasics/MediumQuestions2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,57 +43,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for test_e2e.EndToEndTest.executor": "Run",
-    "Python tests.Python tests for test_e2e.EndToEndTest.test_e2e.executor": "Run",
-    "Python tests.Python tests in test_e2e.py.executor": "Run",
-    "Python tests.pytest in test_LoggingDemo.py.executor": "Run",
-    "Python tests.pytest in test_demo.py.executor": "Run",
-    "Python tests.pytest in test_demo2.py.executor": "Run",
-    "Python tests.pytest in test_e2e.py.executor": "Run",
-    "Python tests.pytest in test_fixturesDemo.py.executor": "Run",
-    "Python tests.pytest in test_passingDataFromFixtures.py.executor": "Run",
-    "Python.CheckBoxesAndRadioButtons.executor": "Run",
-    "Python.ChidlWindow.executor": "Run",
-    "Python.ChildWindowAssignment.executor": "Run",
-    "Python.CommonPrefix.executor": "Run",
-    "Python.End2EndTest.executor": "Run",
-    "Python.ExecptionHandling.executor": "Run",
-    "Python.ExplicitAndImplicitWaits.executor": "Run",
-    "Python.Files.executor": "Run",
-    "Python.HandleAutoSuggestiveDropDowns.executor": "Run",
-    "Python.HandlingFrames.executor": "Run",
-    "Python.InterviewQuestions.executor": "Run",
-    "Python.MediumLevel.executor": "Run",
-    "Python.MediumQuestions2.executor": "Run",
-    "Python.Miscellaneous.executor": "Run",
-    "Python.MockInterview.executor": "Run",
-    "Python.PalindromNumber.executor": "Run",
-    "Python.Queue.executor": "Run",
-    "Python.RomanToInt.executor": "Run",
-    "Python.SortTables.executor": "Debug",
-    "Python.Stack.executor": "Run",
-    "Python.SwitchingTabs.executor": "Run",
-    "Python.actionsDemo.executor": "Run",
-    "Python.alerts.executor": "Run",
-    "Python.chromeOptionsDemo.executor": "Run",
-    "Python.demobrowser.executor": "Run",
-    "Python.inheritance.executor": "Run",
-    "Python.inheritance2.executor": "Run",
-    "Python.inhertanceExample.executor": "Run",
-    "Python.locators.executor": "Run",
-    "Python.locatorsExtension.executor": "Run",
-    "Python.pythonQuestions2.executor": "Run",
-    "Python.readWriteFile.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Python/PythonSelenium/PythonSeleniumFramework/test_e2e.py",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for test_e2e.EndToEndTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_e2e.EndToEndTest.test_e2e.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_e2e.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_LoggingDemo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_demo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_demo2.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_e2e.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_fixturesDemo.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest in test_passingDataFromFixtures.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CheckBoxesAndRadioButtons.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChidlWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ChildWindowAssignment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.CommonPrefix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.End2EndTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExecptionHandling.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ExplicitAndImplicitWaits.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Files.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandleAutoSuggestiveDropDowns.executor&quot;: &quot;Run&quot;,
+    &quot;Python.HandlingFrames.executor&quot;: &quot;Run&quot;,
+    &quot;Python.InterviewQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MediumLevel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MediumQuestions2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Miscellaneous.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MockInterview.executor&quot;: &quot;Run&quot;,
+    &quot;Python.PalindromNumber.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Queue.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RomanToInt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SortTables.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.Stack.executor&quot;: &quot;Run&quot;,
+    &quot;Python.SwitchingTabs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.actionsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.alerts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chromeOptionsDemo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.demobrowser.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inheritance2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.inhertanceExample.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.locatorsExtension.executor&quot;: &quot;Run&quot;,
+    &quot;Python.pythonQuestions2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.readWriteFile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Terraform/appserver.tf&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.MediumQuestions2">
     <configuration name="MediumLevel" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
