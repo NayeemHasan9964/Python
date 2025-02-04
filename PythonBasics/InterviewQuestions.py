@@ -1,4 +1,6 @@
 # 1. Basic String Manipulation
+from PIL.GimpGradientFile import linear
+
 
 # Write a function to reverse a string without using built-in functions.
 # def rev_String(s):
@@ -252,6 +254,31 @@
 #                 return n
 # obj = primeNumber()
 # print(obj.primeOrNot(5))
+
+# numbers are linear quadratic or cubic
+
+def sequence_type(numbers):
+    first_diff = list()
+    second_diff = set()
+    i = len(numbers)-1
+    j = i - 1
+    while i > 0 :
+        first_diff.append(numbers[i] - numbers[j])
+        i = i - 1
+        j = j - 1
+
+    for i in range(1,len(first_diff)):
+        second_diff.add(first_diff[i] - first_diff[i - 1])
+
+    if len(second_diff) == 1 and 0 in second_diff:
+        return 'Linear'
+    elif len(second_diff) == 1:
+        return 'Quadratic'
+    else:
+        return 'Cubic'
+
+
+print(sequence_type([1,4,9]))
 
 
 

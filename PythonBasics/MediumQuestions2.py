@@ -4,6 +4,11 @@
 #         return []
 #     return lst[-n:]
 # print(retrieve_last_elements([1,2,3,4,5],2))
+from xxsubtype import bench
+
+from pandas.core.dtypes.inference import is_re
+from pyparsing import countedArray
+
 
 # Check if given String is in the middle of the other string
 # def is_in_center(s1, s2):
@@ -158,10 +163,148 @@
 # print(cmyk_to_rgb([0.4,0.49,0.552,0.36]))
 
 # heterogeneous Dict
-def filter_dict(d):
-    result = {key: value for key, value in d.items() if isinstance(value, int)}
-    return result
-print(filter_dict({'a':1,'b':'2','c':3.0,'d':[4],'e':5}))
+# def filter_dict(d):
+#     result = {key: value for key, value in d.items() if isinstance(value, int)}
+#     return result
+# print(filter_dict({'a':1,'b':'2','c':3.0,'d':[4],'e':5}))
 
+# reverse vowels in a string
+# def reverse_vowels(S):
+# #     vowels = 'aeiouAEIOU'
+# #     S = list(S)
+# #     i, j = 0, len(S) - 1
+# #
+# #     while i < j:
+# #         if S[i] not in vowels:
+# #             i += 1
+# #         elif S[j] not in vowels:
+# #             j -= 1
+# #         else:
+# #             S[i], S[j] = S[j], S[i]
+# #             i += 1
+# #             j -= 1
+# #
+# #     return ''.join(S)
+# #
+# # print(reverse_vowels('pperu'))
 
+# Maximize first number
+# def maximize_first_number(numbers):
+#     result = []
+#     a, b = numbers
+#     max_number = int("".join(sorted(str(a), reverse=True)))
+#     result.append(max_number)
+#     result.append(b)
+#
+#     return result
+# print(maximize_first_number([9876,12345]))
 
+# LCM of two numbers
+# import  math
+# def calculate_lcm(num1,num2):
+#     lcm = abs(num1*num2)//math.gcd(num1,num2)
+#     return lcm
+# print(calculate_lcm(12,15))
+
+# Straight line or not
+# def check_straight_line(coordinates):
+#
+#     x1, y1 = coordinates[0]
+#     x2, y2 = coordinates[1]
+#
+#     dx, dy = x2 - x1, y2 - y1
+#     print(dx,dy)
+#
+#     for i in range(1, len(coordinates) - 1):
+#         x1, y1 = coordinates[i]
+#         x2, y2 = coordinates[i + 1]
+#
+#
+#         if (y2 - y1) * dx != (x2 - x1) * dy:
+#             return False
+#
+#     return True
+#
+# # Example usage
+# print(check_straight_line([[1, 2], [2, 3], [3, 4], [4, 5], [5, 6]]))
+# print(check_straight_line([[1, 1], [2, 2], [3, 4], [4, 5], [5, 6]]))
+
+# Abundant number
+# def is_abundant(n):
+#     divisors = []
+#     sumOfDivisors = 0
+#     for i in range(1,n):
+#         if n%i == 0:
+#             divisors.append(i)
+#     for nums in divisors:
+#         sumOfDivisors = sumOfDivisors + nums
+#     if sumOfDivisors > n:
+#         return True
+#     else:
+#         return False
+# print(is_abundant(6))
+
+# Filter Positive Numbers
+# def positive_filter(numbers):
+#     positive_numbers = [i for i in numbers if i>0]
+#     return positive_numbers
+# print(positive_filter([-1,2,-3,4,-5]))
+
+# is Prime or not
+# def is_prime(n):
+#     for i in range(2,n):
+#         if n%i==0:
+#             return False
+#     return True
+# # print(is_prime(3))
+
+# i = 0
+# while i < 5:
+#     if i == 2:
+#         continue
+#     else:
+#         print(i,end = " ")
+#         i += 1
+
+# print('The sum of {0} and {1} is {2}'.format(2, 10, 12))
+
+# First repeating Digit
+# def findFirstRepeatingDigit(digitPattern):
+#     seen = set()
+#
+#     for digit in digitPattern:
+#         if digit in seen:
+#             return digit
+#         seen.add(digit)
+#
+#     return -1
+# print(findFirstRepeatingDigit('12342'))
+
+# List is Balanced
+# def is_balanced(lst):
+#     half = len(lst)//2
+#     sum1 = sum(lst[:half])
+#     sum2 = sum(lst[half:])
+#     if sum1 == sum2:
+#         return True
+#     else:
+#         return False
+# print(is_balanced([1,2,3,3,2,1]))
+
+# Replace Characters
+# def double_character_swap(text, char1, char2):
+#     swapped_text = text.maketrans({char1: char2, char2: char1})
+#     return text.translate(swapped_text)
+# print(double_character_swap('hello world','h','w'))
+
+# Valid Arithmetic
+def is_math_expression(s):
+    nums = '0123456789'
+    arth_operators = '+-*/()'
+    for char in s:
+        if char in nums or char in arth_operators:
+            continue
+        else:
+            return False
+    return True
+print(is_math_expression('(4+5)*6/7-8'))
