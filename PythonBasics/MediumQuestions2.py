@@ -298,13 +298,95 @@ from pyparsing import countedArray
 # print(double_character_swap('hello world','h','w'))
 
 # Valid Arithmetic
-def is_math_expression(s):
-    nums = '0123456789'
-    arth_operators = '+-*/()'
-    for char in s:
-        if char in nums or char in arth_operators:
-            continue
-        else:
-            return False
-    return True
-print(is_math_expression('(4+5)*6/7-8'))
+# def is_math_expression(s):
+#     nums = '0123456789'
+#     arth_operators = '+-*/()'
+#     for char in s:
+#         if char in nums or char in arth_operators:
+#             continue
+#         else:
+#             return False
+#     return True
+# print(is_math_expression('(4+5)*6/7-8'))
+
+# def sequence_type(numbers):
+#     first_diff = list()
+#     second_diff = set()
+#     i = len(numbers)-1
+#     j = i - 1
+#     while i > 0 :
+#         first_diff.append(numbers[i] - numbers[j])
+#         i = i - 1
+#         j = j - 1
+#
+#     for i in range(1,len(first_diff)):
+#         second_diff.add(first_diff[i] - first_diff[i - 1])
+#
+#     if len(second_diff) == 1 and 0 in second_diff:
+#         return 'Linear'
+#     elif len(second_diff) == 1:
+#         return 'Quadratic'
+#     else:
+#         return 'Cubic'
+#
+#
+# print(sequence_type([1,4,9]))
+
+# Extract name from an Email
+# def get_name_from_email(email):
+#     email = email.split('@')
+#     name = email[0]
+#     name = name.replace('.',' ')
+#     return name
+# print(get_name_from_email('john.doe@example.com'))
+
+# Alternating Factorial
+# def alternating_factorial(n):
+#         def factorial(n):
+#             fact = 1
+#             for i in range(1, n + 1):
+#                 fact *= i
+#             return fact
+#
+#         fact_sum = 0
+#         for i in range(1, n + 1):
+#             if i % 2 == 0:
+#                 fact_sum += factorial(i)
+#             else:
+#                 fact_sum -= factorial(i)
+#         return fact_sum
+# print(alternating_factorial(5))
+
+# count number of zeroes in the Binary
+# def count_zeroes(n):
+#     binArr = []
+#     while n > 0:
+#         bit = n % 2,
+#         binArr.append(str(bit))
+#         n //= 2
+#     binArr.reverse()
+#     binary_num = ''.join(binArr)
+#     zero_count = 0
+#     for char in binary_num:
+#         if char == '0':
+#             zero_count += 1
+#     return zero_count
+# print(count_zeroes(18))
+
+# Convert Keys and Values of Dict to list
+# def dict_to_lists(dict):
+#     keys = []
+#     numbers = []
+#     for key,values in dict.items():
+#         keys.append(key)
+#         numbers.append(values)
+#     return keys,numbers
+# print(dict_to_lists({'a':1,'b':2,'c':3}))
+
+# Count No of elements in the multidimensional list
+# def count_elements(lst):
+#     length  = []
+#     for i in lst:
+#         length.append(len(i))
+#     return sum(length)
+# print(count_elements([[1,2],[3,4],[5,6]]))
