@@ -6,6 +6,7 @@
 # print(retrieve_last_elements([1,2,3,4,5],2))
 from xxsubtype import bench
 
+from pandas.compat.numpy.function import validate_clip_with_axis
 from pandas.core.dtypes.inference import is_re
 from pyparsing import countedArray
 
@@ -390,3 +391,97 @@ from pyparsing import countedArray
 #         length.append(len(i))
 #     return sum(length)
 # print(count_elements([[1,2],[3,4],[5,6]]))
+
+# Euclid Number
+# def euclid_number(n):
+#     p = 1  # Initialize product
+#     count = 0  # Count of prime numbers found
+#     num = 2  # Start checking for primes from 2
+#
+#     while count < n:
+#         for i in range(2, int(num ** 0.5) + 1):
+#             if num % i == 0:
+#                 break
+#         else:  # If no break occurred, num is prime
+#             p *= num  # Multiply prime number to product
+#             count += 1
+#         num += 1  # Check the next number
+#
+#     return p + 1  # Return the Euclid number
+# print(euclid_number(5))
+
+# RowSum
+# def row_sum(matrix):
+#     rowSum = []
+#     for i in range(0,len(matrix)):
+#         rowSum.append(sum(matrix[i]))
+#     return rowSum
+# print(row_sum([[1,2],[3,4]]))
+
+# Calculate Salary
+# def calculate_salary(hours):
+#
+#     if hours <= 40:
+#         return hours * 20
+#     else:
+#         afterFourtyHours = hours - 40
+#         afterFourtyHourSalary = afterFourtyHours * 25
+#
+#         FirstFourtyHours = hours * 20
+#         FinalSalary = FirstFourtyHours - (afterFourtyHours * 20)
+#         TotalSalary = FinalSalary + afterFourtyHourSalary
+#         return TotalSalary
+# print(calculate_salary(35))
+
+# Extend Vowel in String
+# def extend_vowels(word, n):
+#     vowelString = []
+#     vowels = 'aeiouAEIOU'
+#     for char in word:
+#         if char in vowels:
+#             vowelString.append(char * n)
+#         else:
+#             vowelString.append(char)
+#     return ''.join(vowelString)
+# print(extend_vowels('hello', 3))
+
+# Common Elements
+# def common_elements(set1, set2):
+#     commonElements = set1 & set2
+#     if len(commonElements) == 0:
+#         return None
+#     else:
+#         return commonElements
+# print(common_elements({1,2,3},{4,5,6}))
+
+# Powerful number or Not
+# def is_powerful(n):
+#     prime_factors = set()
+#     num = n
+#     for i in range(2, n + 1):
+#         while num % i == 0:
+#             prime_factors.add(i)
+#             num //= i
+#         if num == 1:
+#             break
+#
+#     for p in prime_factors:
+#         if n % (p * p) != 0:
+#             return False
+#
+#     return True
+# print(is_powerful(16))
+
+# Move Capital Letters to Front
+def move_capitals_to_front(s):
+    upperString = ""
+    lowerString = ""
+    for char in s:
+        if char.isupper():
+            upperString = upperString + char
+        elif char.islower():
+            lowerString = lowerString + char
+    return upperString+lowerString
+print(move_capitals_to_front('HelloWorld'))
+
+
