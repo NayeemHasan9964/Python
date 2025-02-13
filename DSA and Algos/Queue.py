@@ -12,10 +12,10 @@ class Queue():
     # Insert an element into the queue
     def enqueue(self, data):
 
-        if (self.tail == self.k - 1):
+        if self.tail == self.k - 1:
             print("The queue is full\n")
 
-        elif (self.head == -1):
+        elif self.head == -1:
             self.head = 0
             self.tail = 0
             self.queue[self.tail] = data
@@ -25,10 +25,10 @@ class Queue():
 
     # Delete an element from the queue
     def dequeue(self):
-        if (self.head == -1):
+        if self.head == -1:
             print("The queue is empty\n")
 
-        elif (self.head == self.tail):
+        elif self.head == self.tail:
             temp = self.queue[self.head]
             self.head = -1
             self.tail = -1
@@ -39,7 +39,7 @@ class Queue():
             return temp
 
     def printQueue(self):
-        if(self.head == -1):
+        if self.head == -1:
             print("No element in the queue")
 
         else:

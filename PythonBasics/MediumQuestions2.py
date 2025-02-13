@@ -4,12 +4,6 @@
 #         return []
 #     return lst[-n:]
 # print(retrieve_last_elements([1,2,3,4,5],2))
-from xxsubtype import bench
-
-from pandas.compat.numpy.function import validate_clip_with_axis
-from pandas.core.dtypes.inference import is_re
-from pyparsing import countedArray
-
 
 # Check if given String is in the middle of the other string
 # def is_in_center(s1, s2):
@@ -473,15 +467,120 @@ from pyparsing import countedArray
 # print(is_powerful(16))
 
 # Move Capital Letters to Front
-def move_capitals_to_front(s):
-    upperString = ""
-    lowerString = ""
-    for char in s:
-        if char.isupper():
-            upperString = upperString + char
-        elif char.islower():
-            lowerString = lowerString + char
-    return upperString+lowerString
-print(move_capitals_to_front('HelloWorld'))
+# def move_capitals_to_front(s):
+#     upperString = ""
+#     lowerString = ""
+#     for char in s:
+#         if char.isupper():
+#             upperString = upperString + char
+#         elif char.islower():
+#             lowerString = lowerString + char
+#     return upperString+lowerString
+# print(move_capitals_to_front('HelloWorld'))
 
+# import math
+# def calculate_distance(point1, point2):
+#     x1,y1 = point1
+#     x2,y2 = point2
+#     distance = math.sqrt((x2-x1)**2 + (y2-y1)**2)
+#     print(x2-x1)
+#     print(y2-y1)
+#     return round(distance,2)
+# print(calculate_distance([1,2],[4,5]))
 
+# Rock Paper scissors Game
+# def rock_paper_scissors(player1_choice, player2_choice):
+#
+#     r = "rock"
+#     p = "paper"
+#     s = "scissors"
+#     if player1_choice == r and player2_choice == p:
+#         return "player 2 wins"
+#     elif player1_choice == p and player2_choice == r:
+#         return "player 1 wins"
+#     elif player1_choice == p and player2_choice == s:
+#         return "player 2 wins"
+#     elif player1_choice == s and player1_choice == p:
+#         return "player 1 wins"
+#     elif player1_choice == s and player2_choice == r:
+#         return "player 2 wins"
+#     elif player1_choice == r and player2_choice == s:
+#         return "player 1 wins"
+#     elif player1_choice == r and player2_choice == r:
+#         return "tie"
+#     elif player1_choice == p and player2_choice == p:
+#         return "tie"
+#     elif player1_choice == s and player2_choice == s:
+#         return "tie"
+#
+# print(rock_paper_scissors("rock","rock"))
+
+# Sum of Letters
+# def sum_of_letters(string):
+#     ASCIIValues = []
+#     for char in string:
+#         ASCIIValues.append(ord(char))
+#     valueSum = sum(ASCIIValues)
+#     if valueSum % 2 == 0:
+#         return 'Even'
+#     else:
+#         return 'Odd'
+# print(sum_of_letters('abc'))
+
+# Nearest Element in the list
+# def nearest_element(numbers, target):
+#     if target <= 0:
+#         return "Enter a number greater than zero"
+#
+#     closest = None  
+#     min_difference = float('inf')
+#
+#     for num in numbers:
+#         difference = abs(num - target)
+#         if difference < min_difference:
+#             min_difference = difference
+#             closest = num
+#
+#     return closest
+# print(nearest_element([7,11,13],8))
+
+# Jacobsthal number
+# def jacobsthal(n):
+#     j = [0, 1]
+#     for i in range(1, n):
+#         j.append(j[i] + (2 * j[i - 1]))
+#     return j[-1]
+#
+# print(jacobsthal(6))
+
+# In Recursive
+# def jacobsthal(n):
+#     if n < 2:
+#      return n
+#
+#     return jacobsthal(n - 1) + 2 * jacobsthal(n - 2)
+# print(jacobsthal(6))
+
+# Odd Sum
+# def sum_of_odds(numbers):
+#     oddList = [num for num in numbers if num%2 != 0]
+#     return sum(oddList)
+# print(sum_of_odds([1,2,3,4,5]))
+
+# Rhythm Syncopated
+# def is_syncopated(rhythm):
+#     r =list(rhythm)
+#     for char in r:
+#         if char == ' ':
+#             return "Yes"
+#     return "No"
+# print(is_syncopated("+++ +++"))
+
+# Vertex of quadratic
+# def vertex(a,b,c):
+#     if a==0:
+#         return None
+#     x=-b/(2*a)
+#     y=((4*a*c)-(b**2))/(4*a)
+#     return x,y
+# print(vertex(1,-3,2))
