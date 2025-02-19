@@ -584,3 +584,170 @@
 #     y=((4*a*c)-(b**2))/(4*a)
 #     return x,y
 # print(vertex(1,-3,2))
+
+# Words are anagrams with their ASCII values anagrams after Squaring
+# def anagramic_squares(word1, word2):
+#     a  = sorted(word1) == sorted(word2)
+#     s1 = [ord(i) for i in word1]
+#     s2 = [ord(i) for i in word2]
+#     return a and sorted(s1) == sorted(s2)
+# print(anagramic_squares('cat','tac'))
+
+# List contains three consecutive common numbers
+# def check_consecutive_numbers(numbers):
+#     countCommon = 0
+#     i = 0
+#     j = len(numbers)-1
+#     while i<len(numbers):
+#         if numbers[i] == numbers[j]:
+#             countCommon += 1
+#         i = i + 1
+#         j = j - 1
+#     print(countCommon)
+#     if countCommon == 3:
+#         return True
+#     else:
+#         return False
+# print(check_consecutive_numbers([1,2,2,3]))
+
+# Pile up cubes vertically
+# def pile_up_cubes(cubes):
+#     n = sorted(cubes)
+#     if n[::-1] == cubes:
+#         return "Yes"
+#     else:
+#         return "No"
+# print(pile_up_cubes([5,4,3,2,1]))
+
+# Valid CheckPost
+import re
+
+from pyparsing import alphas
+
+
+# def validate_postal_code(code):
+#     if len(code)>6:
+#         return "Invalid Code"
+#     for i in range(len(code) - 1):
+#         if code[i] == code[i + 1]:
+#             return False
+#     return True
+# print(validate_postal_code('121426'))
+
+# Blum Integer
+# def is_blum_integer(n):
+#     PrimeNumbers = []
+#     for num in range(2,n):
+#         if num > 1:
+#             for i in range(2,num):
+#                 if num % i == 0:
+#                     break
+#             else:
+#                 PrimeNumbers.append(num)
+#     print(PrimeNumbers)
+#     for p in range(0,len(PrimeNumbers)):
+#         for  q in range(p+1,len(PrimeNumbers)):
+#             if (p * q == n  or  p * p == n) and (p % 4 == 3 and q % 4 == 3):
+#                 return True
+#     return False
+# print(is_blum_integer(15))
+
+# Replace letter with a string of its position with number
+# def replace_with_position(s):
+#     numList = []
+#     alphabet_dict = {chr(i): i - 96 for i in range(97, 123)}
+#     for char in s:
+#         for key, value in alphabet_dict.items():
+#             if char == key:
+#                 numList.append(str(value))
+#     return ' '.join(numList)
+# print(replace_with_position('hello'))
+
+# Extract Domain
+# def extract_domain(url):
+#     if not url:  # Handle empty input
+#         return ""
+#  # Remove protocol (http:// or https://)
+#     if "://" in url:
+#         url = url.split("://", 1)[1]
+#  # Remove 'www.' if present
+#     if url.startswith("www."):
+#         url = url[4:]
+# # Extract only the domain (before any `/` or `?`)
+#     url = url.split('/')[0]  # Remove path
+#     url = url.split('?')[0]  # Remove query parameters
+#     return url
+# print(extract_domain('https://www.google.com'))
+
+# Mountain List
+# def is_mountain(lst):
+#         if lst[-1] != max(lst):
+#             if lst[0] != max(lst):
+#                 return True
+#         return False
+# print(is_mountain([0,3,2,1]))
+
+# Explosion Intensity
+# def explosion_intensity(s):
+#     intensity = ''
+#     for char in range(0,len(s)):
+#         intensity = intensity + (s[char] * (char+1))
+#     return intensity
+# print(explosion_intensity('Boom'))
+
+# n-List differences
+# def n_differences(lst):
+#     lst2=lst
+#     while len(lst2)!=1:
+#         lst1=[]
+#         for i in range(1,len(lst2)):
+#             lst1.append(lst2[i]-lst2[i-1])
+#         lst2=lst1
+#     return lst2[0]
+# print(n_differences([5,2,1]))
+
+# Special List
+# def is_special(lst):
+#     for index in range(len(lst)):
+#         if (index % 2 == 0) and (lst[index] % 2 == 0):
+#                 return True
+#         if (index % 2 != 0) and (lst[index] % 2 != 0):
+#                 return  True
+#         else:
+#                 return False
+# print(is_special([2,5,4,3,6,1]))
+
+# Digit Distance
+# def digit_distance(num1, num2):
+#     n1 = list(num1)
+#     n2 = list(num2)
+#     n3 = []
+#     for i in range(0,len(n1)):
+#         n3.append(abs(int(n2[i]) - int(n1[i])))
+#     return sum(n3)
+# print(digit_distance('11111','22222'))
+
+# Primorial Number
+# def calculate_primorial(n):
+#     primeList = []
+#     primeMul = 1
+#     for num in range(2,n+1):
+#         if num > 1:
+#             for i in range(2,num):
+#                 if num % i == 0:
+#                     break
+#             else:
+#                 primeList.append(num)
+#     for num in primeList:
+#         primeMul = primeMul * num
+#     return primeMul
+# print(calculate_primorial(5))
+
+
+
+
+
+
+
+
+
