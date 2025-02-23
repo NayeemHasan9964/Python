@@ -743,6 +743,71 @@ from pyparsing import alphas
 #     return primeMul
 # print(calculate_primorial(5))
 
+# Broken Keyboard
+# def type_with_broken_keyboard(word):
+#     vowels = ['a', 'e', 'i', 'o', 'u']
+#     string = ""
+#     bool = 0
+#     for char in word:
+#         if char in vowels:
+#             bool += 1
+#         if bool % 2 == 1:
+#             string += char.upper()
+#             continue
+#         string += char
+#     return string
+# print(type_with_broken_keyboard('banana'))
+
+# Abbreviate the Sentence
+# def abbreviate_sentence(sentence):
+#     return ' '.join([f'{i[0]}{len(i)}' for i in sentence.split()])
+# print(abbreviate_sentence('Hello World'))
+
+# Count Occurrences
+# def count_letters(word):
+#     countDict ={}
+#     for char in word:
+#         if char not in countDict:
+#             countDict[char] = 1
+#         else:
+#             countDict[char] += 1
+#     return countDict
+# print(count_letters('banana'))
+
+# Ma product from a list
+# def product_of_largest(numbers):
+    # prodList = []
+    # for i in range(1,len(numbers)):
+    #     prodList.append(numbers[i] * numbers[i-1])
+    # print(prodList)
+    # return max(prodList)
+#     numbers.sort()
+#     return numbers[-1] * numbers[-2]
+# print(product_of_largest([-10,-20,-30,40]))
+
+# Max number index
+# def highest_index(numbers):
+#     maxNumber = max(numbers)
+#     maxIndex = []
+#     for i in range(0,len(numbers)):
+#         if numbers[i] == maxNumber:
+#             maxIndex.append(i)
+#     return max(maxIndex)
+# print(highest_index([1,2,3,2,3]))
+
+# Pentagonal Number
+# def pentagonal_number(n):
+#     return round(n * (3*n-1)/2)
+# print(pentagonal_number(5))
+
+
+
+
+
+
+
+
+
 
 
 
